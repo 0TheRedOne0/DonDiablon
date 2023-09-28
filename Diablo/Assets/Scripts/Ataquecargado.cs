@@ -4,15 +4,46 @@ using UnityEngine;
 
 public class Ataquecargado : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject prefabToSpawn; // Asigna el prefab 
+
+    private void Start()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        // Inicia la corutina para instanciar el prefab cada 15 segundos
+        StartCoroutine(SpawnPrefabEvery15Seconds());
+    }
+    private IEnumerator SpawnPrefabEvery15Seconds()
+    {
+        while (true)
+        {
+            // Instancia el prefab
+            Instantiate(prefabToSpawn, transform.position, Quaternion.identity);
+            Debug.Log("Funciona");
+
+            // Espera 15 segundos antes de la próxima instancia
+            yield return new WaitForSeconds(15f);
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Stones")
+        {
+
+            //Desaparece proyectil
+        }
+        else if (collision.gameObject.tag == "Diablo")
+        {
+            // No pasa nada
+        }
+
+        else if (collision.gameObject.tag == "Diablo")
+        {
+            // cooldownx
+        }
     }
 }
