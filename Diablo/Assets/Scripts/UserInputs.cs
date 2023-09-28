@@ -10,18 +10,23 @@ public class UserInputs : MonoBehaviour
     public Animator AnimCotrol;
     public Animator CrashController;
 
+    
     public GameObject GameOver;
     public GameObject MainCamera;
 
+    //Movement Variables
     public Rigidbody RB;
     public float moveSpeed;
-
     private Vector2 moveInput;
+
+    //AttaqueCaC collider
+    public Collider CaC;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        CaC.enabled= false;
     }
 
     // Update is called once per frame
@@ -47,5 +52,20 @@ public class UserInputs : MonoBehaviour
         moveInput.Normalize();
         RB.velocity = new Vector3(moveInput.x * moveSpeed, RB.velocity.y, moveInput.y * moveSpeed);
 
+    }
+
+    void AttkCaC()
+    {
+      
+        
+            ColActivate();
+        
+    }
+
+    IEnumerator ColActivate()
+    {
+        CaC.enabled = true;     
+        yield return new WaitForSeconds(1);
+        CaC.enabled = false;
     }
 }
