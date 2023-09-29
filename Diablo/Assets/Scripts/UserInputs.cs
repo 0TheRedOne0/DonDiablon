@@ -10,7 +10,8 @@ public class UserInputs : MonoBehaviour
     public Animator AnimCotrol;
     public Animator CrashController;
     public FixedJoystick Joystick1;
-    
+    public FixedJoystick Joystick2;
+
     public GameObject GameOver;
     public GameObject MainCamera;
     public GameObject prefabToSpawn; // Asigna el prefab 
@@ -25,10 +26,10 @@ public class UserInputs : MonoBehaviour
 
 
     //AttkCargado
-    public bool Boomerang;
+    public bool Boomerang = true;
     public bool unarmedM;
 
-
+    
 
 
     // Start is called before the first frame update
@@ -42,6 +43,12 @@ public class UserInputs : MonoBehaviour
     {
         Death();
         Movement();
+
+        if(Joystick2.Horizontal != 0|| Joystick2.Vertical != 0)
+        {
+            
+            AttkCharge();
+        }
     }
 
     void Death()
@@ -72,13 +79,15 @@ public class UserInputs : MonoBehaviour
 
     void AttkCharge()
     {
-        if (Boomerang == true /*&& boton abajo*/)
+        
+        if (Boomerang == true )
         {
-            Instantiate(prefabToSpawn, transform.position, Quaternion.identity);
             Debug.Log("Funciona");
+                Instantiate(prefabToSpawn, transform.position, Quaternion.identity);
+         
             Boomerang = false;
-            unarmedM = true;
-            waitBoomerang();
+        //    unarmedM = true;
+            StartCoroutine(waitBoomerang());
         }
 
      }
@@ -86,9 +95,10 @@ public class UserInputs : MonoBehaviour
     IEnumerator waitBoomerang()
     {
         
-        yield return new WaitForSeconds(10);
-        unarmedM = false;
+        yield return new WaitForSeconds(3);
+     ///   unarmedM = false;
         Boomerang = true;
+        Debug.Log("termino el tiempo");
     }
 
 
