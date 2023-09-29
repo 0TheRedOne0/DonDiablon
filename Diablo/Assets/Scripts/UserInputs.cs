@@ -21,15 +21,20 @@ public class UserInputs : MonoBehaviour
     public float moveSpeed;
     private Vector2 moveInput;
 
+    //Rot variables
+    private Vector2 rotationInput;
+
     //AttaqueCaC collider
     public Collider CaC;
 
 
     //AttkCargado
+    //public Machete[] macheteArray;
     public bool Boomerang = true;
     public bool unarmedM;
 
-    
+    public GameObject pistola;
+
 
 
     // Start is called before the first frame update
@@ -43,6 +48,7 @@ public class UserInputs : MonoBehaviour
     {
         Death();
         Movement();
+        RotPistola();
 
         if(Joystick2.Horizontal != 0|| Joystick2.Vertical != 0)
         {
@@ -70,6 +76,23 @@ public class UserInputs : MonoBehaviour
         RB.velocity = new Vector3(moveInput.x * moveSpeed, RB.velocity.y, moveInput.y * moveSpeed);
 
 
+    }
+
+    void RotPistola()
+    {
+     
+        rotationInput.y = Joystick2.Vertical;
+        rotationInput.x = Joystick2.Horizontal;
+        Vector3 DirRot = rotationInput;
+       
+        Debug.Log(DirRot);
+
+         Quaternion rotacion = Quaternion.AngleAxis(DirRot.x*5, pistola.transform.up);
+        //Quaternion rotacion = Quaternion.FromToRotation(Vector3.zero, DirRot*5); 
+
+
+       pistola.transform.Rotate(rotacion.eulerAngles);
+        
     }
 
     void AttkCaC()
