@@ -5,12 +5,16 @@ using UnityEngine.UI;
 
 public class UserDiablo : MonoBehaviour
 {
-    int currentHP = 200;
+    public int currentHP = 200;
     public int maxHP = 200;
     public int minHP = 0;
     public Slider HPdiablo;
 
     public GameObject GameWin;
+
+    //Variables para el RockArray
+    public GameObject[] rocks1Arr;
+    public GameObject[] rocks2Arr;
 
 
     // first frame update
@@ -50,18 +54,39 @@ public class UserDiablo : MonoBehaviour
     {
         if (currentHP <= 134)
         {
-            
-
+            RockLayout1();
         }
         else if (currentHP <= 68)
         {
-            
-
+            RockLayout2();
         }
 
         else if (currentHP == 0)
         {
             GameWin.SetActive(true);
+
+        }
+
+        void RockLayout1()
+        {
+            GameObject rockGen1;
+            int i = Random.Range(0, rocks1Arr.Length - 1);
+            rockGen1 = Instantiate(rocks1Arr[i], transform);
+            StartCoroutine(CoolDown());
+            
+        }
+
+        void RockLayout2()
+        {
+            GameObject rockGen2;
+            int i = Random.Range(0, rocks2Arr.Length - 1);
+            rockGen2 = Instantiate(rocks2Arr[i], transform);
+            StartCoroutine(CoolDown());
+        }
+
+        IEnumerator CoolDown()
+        {
+            yield return new WaitForSeconds(5);
 
         }
     }
