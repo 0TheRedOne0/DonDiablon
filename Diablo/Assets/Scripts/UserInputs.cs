@@ -7,6 +7,7 @@ using TMPro;
 public class UserInputs : MonoBehaviour
 {
     public float UserHP=5;
+    public Slider DonHP;
     public Animator AnimCotrol;
     public Animator CrashController;
     public FixedJoystick Joystick1;
@@ -59,7 +60,7 @@ public class UserInputs : MonoBehaviour
 
     void Death()
     {
-        if(UserHP == 0)
+        if(UserHP <= 0)
         {
             GameOver.SetActive(true);
             MainCamera.SetActive(false);
@@ -76,6 +77,14 @@ public class UserInputs : MonoBehaviour
         RB.velocity = new Vector3(moveInput.x * moveSpeed, RB.velocity.y, moveInput.y * moveSpeed);
 
 
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Balas"))
+        {
+            UserHP--;
+        }
     }
 
     void RotPistola()
@@ -97,7 +106,7 @@ public class UserInputs : MonoBehaviour
 
     void AttkCaC()
     {
-        ColActivate(); 
+        StartCoroutine(ColActivate()); 
     }
 
     void AttkCharge()
