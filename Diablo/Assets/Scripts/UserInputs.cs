@@ -87,7 +87,7 @@ public class UserInputs : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Balas"))
+        if (other.CompareTag("Balas")|| other.CompareTag("Hands"))
         {
             UserHP--;
         }

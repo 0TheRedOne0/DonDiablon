@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1134170547252628920}
   - component: {fileID: 8992401781432410064}
-  - component: {fileID: 7621916971906406782}
+  - component: {fileID: 8862259800538786264}
   m_Layer: 0
   m_Name: LHmissile
   m_TagString: Untagged
@@ -55,7 +55,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 38.03508, y: 35.288948, z: 28.451437}
   m_Center: {x: 3.1943512, y: 1.6060448, z: -2.9838448}
---- !u!114 &7621916971906406782
+--- !u!114 &8862259800538786264
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -68,10 +68,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  handsSpeed: 70
+  handsSpeed: 30
   handsFollowRate: 15
-  LeftHandPos: {fileID: 0}
-  LeftHand: {fileID: 3358049796728961454}
+  LeftHandPos: {fileID: 5663896784453316728, guid: fcd633c65f6c1354e8dde253e5291fef,
+    type: 3}
+  LH: {fileID: 3358049796728961454}
 --- !u!1001 &2147059708249963309
 PrefabInstance:
   m_ObjectHideFlags: 0

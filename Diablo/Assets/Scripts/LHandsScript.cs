@@ -9,7 +9,7 @@ public class LHandsScript : MonoBehaviour
     [SerializeField] private float handsFollowRate = 0f;
 
     public GameObject LeftHandPos;
-    public GameObject LeftHand;
+    public GameObject LH;
 
     private GameObject spawnedHand;
 
@@ -66,7 +66,15 @@ public class LHandsScript : MonoBehaviour
     private void OnDestroy()
     {
         //spawnedBullet = Instantiate(bullet, transform.position, Quaternion.identity);
-        spawnedHand = Instantiate(LeftHand,leftPos, Quaternion.identity);
+        spawnedHand = Instantiate(LH, leftPos, Quaternion.identity);
         //LeftHand.SetActive(true);
+         spawnedHand.SetActive(true);
+
+    // Si el componente de script está desactivado, actívalo
+    LHandsScript lHandScript = spawnedHand.GetComponent<LHandsScript>();
+    if (lHandScript != null)
+    {
+        lHandScript.enabled = true;
+    }
     }
 }
