@@ -7,6 +7,8 @@ using TMPro;
 public class UserInputs : MonoBehaviour
 {
     public float UserHP=5;
+    public float MaxHP = 5;
+    public float MinHP = 0;
     public Slider DonHP;
     public Animator AnimCotrol;
     public Animator CrashController;
@@ -42,6 +44,10 @@ public class UserInputs : MonoBehaviour
     void Start()
     {
         CaC.enabled= false;
+        DonHP.maxValue = 5;
+        DonHP.minValue = 0;
+
+
     }
 
     // Update is called once per frame
