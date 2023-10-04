@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class UserDiablo : MonoBehaviour
 {
     public int currentHP = 200;
-    public int maxHP = 200;
+    public int maxHealth = 200;
     public int minHP = 0;
     public Slider HPdiablo;
 
@@ -20,7 +20,8 @@ public class UserDiablo : MonoBehaviour
     // first frame update
     void Start()
     {
-        
+        currentHP  = maxHealth;
+       // HPdiablo.SetMaxHealth(maxHealth);
     }
 
     //once per frame

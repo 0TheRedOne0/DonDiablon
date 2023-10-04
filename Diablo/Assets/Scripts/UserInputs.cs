@@ -37,11 +37,19 @@ public class UserInputs : MonoBehaviour
     public GameObject pistola;
 
 
+    //Vida-Barra de vida
+    int currentHealth;
+    public Vida barraDeVida;
+    public int maxHealth = 5;
+
+
 
     // Start is called before the first frame update
     void Start()
     {
         CaC.enabled= false;
+        currentHealth = maxHealth;
+        barraDeVida.SetMaxHealth(maxHealth);
     }
 
     // Update is called once per frame
@@ -84,6 +92,9 @@ public class UserInputs : MonoBehaviour
         if (other.CompareTag("Balas"))
         {
             UserHP--;
+            currentHealth -= 1;
+            barraDeVida.SetHealth(currentHealth);
+            Debug.Log("-1 al Slider");
         }
     }
 
