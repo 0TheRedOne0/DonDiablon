@@ -53,7 +53,7 @@ Material:
     - _Base_Roughness: 1
     - _Color_contrast: 1
     - _Has_AO: 1
-    - _Has_Color_Texture: 1
+    - _Has_Color_Texture: 0
     - _Has_Normal_Map_Texture: 0
     - _Hue: 0
     - _Is_it_metallic_1: 0
@@ -68,7 +68,7 @@ Material:
     - _Roughness_White: 1
     - _Solid_Color_Overlay: 0
     m_Colors:
-    - _Solid_Color: {r: 0, g: 0, b: 0, a: 0}
+    - _Solid_Color: {r: 1, g: 1, b: 1, a: 0}
     - _Tiling_and_Offset: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &1881770214336050991

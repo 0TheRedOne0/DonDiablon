@@ -63,7 +63,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Base_Roughness: 0.47
+    - _Base_Roughness: 0.959
     - _Color_contrast: 1.67
     - _Has_AO: 1
     - _Has_Color_Texture: 1

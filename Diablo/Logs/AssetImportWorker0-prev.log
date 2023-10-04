@@ -1,23 +1,23 @@
 Using pre-set license
 Built from '2022.3/release' branch; Version is '2022.3.5f1 (9674261d40ee) revision 9860134'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19042) 64bit Professional' Language: 'es' Physical Memory: 16191 MB
+OS: 'Windows 10  (10.0.19045) 64bit CoreSingleLanguage' Language: 'es' Physical Memory: 10187 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-D:\Unity\2022.3.5f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2022.3.5f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-D:/trabajos/RepoDiablon/DonDiablon/Diablo
+C:/Users/Angelicraft/Desktop/DIABLO/DonDiablon/Diablo
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-61579
-Successfully changed project path to: D:/trabajos/RepoDiablon/DonDiablon/Diablo
-D:/trabajos/RepoDiablon/DonDiablon/Diablo
+63198
+Successfully changed project path to: C:/Users/Angelicraft/Desktop/DIABLO/DonDiablon/Diablo
+C:/Users/Angelicraft/Desktop/DIABLO/DonDiablon/Diablo
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,64 +49,66 @@ D:/trabajos/RepoDiablon/DonDiablon/Diablo
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [18492] Host "[IP] 10.25.80.208 [Port] 0 [Flags] 2 [Guid] 3267080880 [EditorId] 3267080880 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ND7A2RD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [2608] Host "[IP] 172.18.16.129 [Port] 0 [Flags] 2 [Guid] 1214529558 [EditorId] 1214529558 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-7U9VBDI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [18492] Host "[IP] 10.25.80.208 [Port] 0 [Flags] 2 [Guid] 3267080880 [EditorId] 3267080880 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ND7A2RD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [2608] Host "[IP] 172.18.16.129 [Port] 0 [Flags] 2 [Guid] 1214529558 [EditorId] 1214529558 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-7U9VBDI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 10.98 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 38.91 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.5f1 (9674261d40ee)
-[Subsystems] Discovering subsystems at path D:/Unity/2022.3.5f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/trabajos/RepoDiablon/DonDiablon/Diablo/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Angelicraft/Desktop/DIABLO/DonDiablon/Diablo/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1050 (ID=0x1c8d)
-    Vendor:   NVIDIA
-    VRAM:     4019 MB
-    Driver:   30.0.14.9733
+    Renderer: AMD Radeon(TM) Vega 8 Graphics (ID=0x15d8)
+    Vendor:   ATI
+    VRAM:     5093 MB
+    Driver:   30.0.13044.13001
 Initialize mono
-Mono path[0] = 'D:/Unity/2022.3.5f1/Editor/Data/Managed'
-Mono path[1] = 'D:/Unity/2022.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'D:/Unity/2022.3.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56800
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56632
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/Unity/2022.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.007224 seconds.
-- Loaded All Assemblies, in  0.552 seconds
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.025802 seconds.
+- Loaded All Assemblies, in  0.866 seconds
 Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.452 seconds
-Domain Reload Profiling: 1004ms
-	BeginReloadAssembly (123ms)
+- Finished resetting the current domain, in  0.503 seconds
+Domain Reload Profiling: 1364ms
+	BeginReloadAssembly (302ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (51ms)
-	RebuildNativeTypeToScriptingClass (31ms)
-	initialDomainReloadingComplete (116ms)
-	LoadAllAssembliesAndSetupDomain (231ms)
-		LoadAssemblies (122ms)
+		CreateAndSetChildDomain (4ms)
+	RebuildCommonClasses (75ms)
+	RebuildNativeTypeToScriptingClass (24ms)
+	initialDomainReloadingComplete (152ms)
+	LoadAllAssembliesAndSetupDomain (306ms)
+		LoadAssemblies (291ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (225ms)
-			TypeCache.Refresh (224ms)
-				TypeCache.ScanAssembly (196ms)
+		AnalyzeDomain (289ms)
+			TypeCache.Refresh (287ms)
+				TypeCache.ScanAssembly (255ms)
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (453ms)
+	FinalizeReload (504ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (341ms)
+		SetupLoadedEditorAssemblies (395ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (20ms)
+			InitializePlatformSupportModulesInManaged (21ms)
 			SetLoadedEditorAssemblies (13ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (4ms)
-			ProcessInitializeOnLoadAttributes (221ms)
-			ProcessInitializeOnLoadMethodAttributes (83ms)
+			BeforeProcessingInitializeOnLoad (6ms)
+			ProcessInitializeOnLoadAttributes (265ms)
+			ProcessInitializeOnLoadMethodAttributes (89ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -114,53 +116,54 @@ Domain Reload Profiling: 1004ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\trabajos\RepoDiablon\DonDiablon\Diablo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\trabajos\RepoDiablon\DonDiablon\Diablo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.140 seconds
-Refreshing native plugins compatible for Editor in 3.44 ms, found 3 plugins.
+Symbol file LoadedFromMemory doesn't match image C:\Users\Angelicraft\Desktop\DIABLO\DonDiablon\Diablo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Angelicraft\Desktop\DIABLO\DonDiablon\Diablo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.808 seconds
+Refreshing native plugins compatible for Editor in 13.45 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.093 seconds
-Domain Reload Profiling: 2233ms
-	BeginReloadAssembly (204ms)
+- Finished resetting the current domain, in  1.800 seconds
+Domain Reload Profiling: 3596ms
+	BeginReloadAssembly (329ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
+		DisableScriptedObjects (12ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (37ms)
-	RebuildCommonClasses (48ms)
-	RebuildNativeTypeToScriptingClass (21ms)
-	initialDomainReloadingComplete (57ms)
-	LoadAllAssembliesAndSetupDomain (810ms)
-		LoadAssemblies (421ms)
+		CreateAndSetChildDomain (47ms)
+	RebuildCommonClasses (54ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (82ms)
+	LoadAllAssembliesAndSetupDomain (1311ms)
+		LoadAssemblies (770ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (495ms)
-			TypeCache.Refresh (440ms)
-				TypeCache.ScanAssembly (421ms)
-			ScanForSourceGeneratedMonoScriptInfo (37ms)
-			ResolveRequiredComponents (17ms)
-	FinalizeReload (1094ms)
+		AnalyzeDomain (713ms)
+			TypeCache.Refresh (643ms)
+				TypeCache.ScanAssembly (611ms)
+			ScanForSourceGeneratedMonoScriptInfo (51ms)
+			ResolveRequiredComponents (20ms)
+	FinalizeReload (1802ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (842ms)
+		SetupLoadedEditorAssemblies (1400ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (7ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			SetLoadedEditorAssemblies (9ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (190ms)
-			ProcessInitializeOnLoadAttributes (531ms)
-			ProcessInitializeOnLoadMethodAttributes (103ms)
-			AfterProcessingInitializeOnLoad (4ms)
-			EditorAssembliesLoaded (0ms)
+			BeforeProcessingInitializeOnLoad (174ms)
+			ProcessInitializeOnLoadAttributes (992ms)
+			ProcessInitializeOnLoadMethodAttributes (181ms)
+			AfterProcessingInitializeOnLoad (21ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 3.76 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (16ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.41 seconds
+Refreshing native plugins compatible for Editor in 10.30 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5342 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 71 unused Assets / (351.0 KB). Loaded Objects now: 5806.
-Memory consumption went from 212.0 MB to 211.6 MB.
-Total: 8.400300 ms (FindLiveObjects: 0.547900 ms CreateObjectMapping: 0.621100 ms MarkObjects: 6.883100 ms  DeleteObjects: 0.346800 ms)
+Unloading 5341 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 71 unused Assets / (352.8 KB). Loaded Objects now: 5805.
+Memory consumption went from 211.6 MB to 211.3 MB.
+Total: 10.152700 ms (FindLiveObjects: 0.742100 ms CreateObjectMapping: 0.931500 ms MarkObjects: 8.012800 ms  DeleteObjects: 0.464400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -176,69 +179,78 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 490134.844620 seconds.
-  path: Assets/Prefabs/LHmissile.prefab
-  artifactKey: Guid(fd74d75a843d1e54f94f55cf8ef7a5ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/LHmissile.prefab using Guid(fd74d75a843d1e54f94f55cf8ef7a5ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13482424f71222b3ef6da5c77ed9798e') in 0.019845 seconds
+  Time since last request: 164004.950467 seconds.
+  path: Assets/Prefabs/lambert1_ORM_Arbol2.png
+  artifactKey: Guid(cf0e45dd1cc73f04ebf799aeac407f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/lambert1_ORM_Arbol2.png using Guid(cf0e45dd1cc73f04ebf799aeac407f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '814812c24fc907d300c8d1bf569d4fd1') in 0.030123 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 157.593438 seconds.
-  path: Assets/Prefabs/CharacterProto.prefab
-  artifactKey: Guid(2c8d30d242d5e5d4c98165726cc87621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/CharacterProto.prefab using Guid(2c8d30d242d5e5d4c98165726cc87621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b23c400a9edf1671d1494ed547f94d4') in 0.001953 seconds
+  Time since last request: 4880.657700 seconds.
+  path: Assets/Prefabs/lambert1_BC_Arbol2.png
+  artifactKey: Guid(f39c9877ed907e84f8f9bda8fd87a454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/lambert1_BC_Arbol2.png using Guid(f39c9877ed907e84f8f9bda8fd87a454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a64aa87225790e76dfed145acec7636f') in 0.036439 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 27.106641 seconds.
+  path: Assets/Prefabs/Arbol2_mat.mat
+  artifactKey: Guid(ea7c3a2c41bfa05438691440d21142d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Arbol2_mat.mat using Guid(ea7c3a2c41bfa05438691440d21142d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db8b1d3026e3ee2064693a0063d9a9b2') in 0.005744 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\trabajos\RepoDiablon\DonDiablon\Diablo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\trabajos\RepoDiablon\DonDiablon\Diablo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.897 seconds
-Refreshing native plugins compatible for Editor in 3.08 ms, found 3 plugins.
+Symbol file LoadedFromMemory doesn't match image C:\Users\Angelicraft\Desktop\DIABLO\DonDiablon\Diablo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Angelicraft\Desktop\DIABLO\DonDiablon\Diablo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.808 seconds
+Refreshing native plugins compatible for Editor in 8.90 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.397 seconds
-Domain Reload Profiling: 2293ms
-	BeginReloadAssembly (182ms)
+- Finished resetting the current domain, in  4.833 seconds
+Domain Reload Profiling: 6634ms
+	BeginReloadAssembly (403ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (15ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (55ms)
-	RebuildCommonClasses (43ms)
-	RebuildNativeTypeToScriptingClass (25ms)
-	initialDomainReloadingComplete (33ms)
-	LoadAllAssembliesAndSetupDomain (613ms)
-		LoadAssemblies (335ms)
+		CreateAndSetChildDomain (149ms)
+	RebuildCommonClasses (61ms)
+	RebuildNativeTypeToScriptingClass (34ms)
+	initialDomainReloadingComplete (72ms)
+	LoadAllAssembliesAndSetupDomain (1230ms)
+		LoadAssemblies (795ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (360ms)
-			TypeCache.Refresh (345ms)
-				TypeCache.ScanAssembly (331ms)
+		AnalyzeDomain (570ms)
+			TypeCache.Refresh (553ms)
+				TypeCache.ScanAssembly (507ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (15ms)
-	FinalizeReload (1398ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (4834ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (724ms)
+		SetupLoadedEditorAssemblies (1177ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
-			SetLoadedEditorAssemblies (6ms)
+			InitializePlatformSupportModulesInManaged (22ms)
+			SetLoadedEditorAssemblies (12ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (146ms)
-			ProcessInitializeOnLoadAttributes (458ms)
-			ProcessInitializeOnLoadMethodAttributes (103ms)
-			AfterProcessingInitializeOnLoad (5ms)
+			BeforeProcessingInitializeOnLoad (214ms)
+			ProcessInitializeOnLoadAttributes (745ms)
+			ProcessInitializeOnLoadMethodAttributes (162ms)
+			AfterProcessingInitializeOnLoad (23ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (29ms)
-Refreshing native plugins compatible for Editor in 4.41 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (43ms)
+Refreshing native plugins compatible for Editor in 7.54 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5176 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 40 unused Assets / (318.7 KB). Loaded Objects now: 5812.
-Memory consumption went from 183.0 MB to 182.7 MB.
-Total: 7.428400 ms (FindLiveObjects: 1.008700 ms CreateObjectMapping: 0.597800 ms MarkObjects: 5.689100 ms  DeleteObjects: 0.127900 ms)
+Unloading 5175 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 40 unused Assets / (318.6 KB). Loaded Objects now: 5810.
+Memory consumption went from 182.6 MB to 182.3 MB.
+Total: 7.089200 ms (FindLiveObjects: 0.804500 ms CreateObjectMapping: 0.972800 ms MarkObjects: 5.112800 ms  DeleteObjects: 0.197400 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
