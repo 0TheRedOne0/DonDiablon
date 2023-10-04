@@ -30,16 +30,25 @@ public class UserInputs : MonoBehaviour
 
 
     //AttkCargado
+    private Quaternion Prot;
+    public GameObject pistola;
+    private GameObject spawnedBullet;
+    public float bulletLife = 1f;
+    public float speed = 1f;
+
     //public Machete[] macheteArray;
     public bool Boomerang = true;
     public bool unarmedM;
 
-    public GameObject pistola;
+    //Pistola
+    
 
     //Vida Barra de Vida
     int currentHealth;
     public Vida barraDeVida;
     public int maxHealth=5;
+
+
 
 
 
@@ -102,15 +111,17 @@ public class UserInputs : MonoBehaviour
 
     void RotPistola()
     {
-     
+
         rotationInput.y = Joystick2.Vertical;
         rotationInput.x = Joystick2.Horizontal;
         Vector3 DirRot = rotationInput;
-       
-      
 
-         Quaternion rotacion = Quaternion.AngleAxis(DirRot.x*5, pistola.transform.up);
+
+
+        Quaternion rotacion = Quaternion.AngleAxis(DirRot.x * 5, pistola.transform.up);
         //Quaternion rotacion = Quaternion.FromToRotation(Vector3.zero, DirRot*5); 
+
+        Prot = rotacion;
 
 
        pistola.transform.Rotate(rotacion.eulerAngles);
@@ -128,8 +139,13 @@ public class UserInputs : MonoBehaviour
         if (Boomerang == true )
         {
             Debug.Log("Funciona");
-                Instantiate(prefabToSpawn, transform.position, Quaternion.identity);
-         
+                spawnedBullet=Instantiate(prefabToSpawn, transform.position, Quaternion.LookRotation(pistola.transform.right*-1));
+            spawnedBullet.GetComponent<BulletsDiablo>().speed = speed;
+            spawnedBullet.GetComponent<BulletsDiablo>().bulletLife = bulletLife;
+          //  spawnedBullet.transform.rotation = pistola.transform.rotation;
+            //spawnedBullet.transform.Rotate(Prot.eulerAngles);
+
+
             Boomerang = false;
         //    unarmedM = true;
             StartCoroutine(waitBoomerang());
