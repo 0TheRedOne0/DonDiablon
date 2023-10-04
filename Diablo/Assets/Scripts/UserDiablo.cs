@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class UserDiablo : MonoBehaviour
 {
     public int currentHP = 200;
-    public int maxHP = 200;
-    public int minHP = 0;
+    public int maxHealth = 200;
+    public int minHealth = 0;
     public Slider HPdiablo;
 
     public GameObject GameWin;
@@ -28,7 +28,8 @@ public class UserDiablo : MonoBehaviour
     // first frame update
     void Start()
     {
-        
+        currentHP = maxHealth;
+        //HPdiablo.SetMaxHealth(maxHealth);
     }
 
     //once per frame
@@ -117,22 +118,33 @@ public class UserDiablo : MonoBehaviour
         {
             //Vector3 startingPos = rockGen1.transform.position;
             Vector3 endPos = Vector3.zero;
+            Vector3 downPos = new Vector3(0f, -100f, 0f);
             while (Vector3.Distance(startingPos, endPos) > 0.5f)
             {
 
                 rockGen1.transform.position = Vector3.MoveTowards(startingPos, endPos, Time.deltaTime * RaiseSpeed);
                 startingPos = rockGen1.transform.position;
                 yield return null;
-            }
-            yield return new WaitForSeconds(10);
-            Destroy(rockGen1.gameObject);
-            RockLayout1();
+            } 
+                yield return new WaitForSeconds(10);
 
+            while (Vector3.Distance(startingPos, downPos) > 0.5f)
+            {
+
+                rockGen1.transform.position = Vector3.MoveTowards(startingPos, downPos, Time.deltaTime * RaiseSpeed);
+                startingPos = rockGen1.transform.position;
+                yield return null;
+            }
+                yield return new WaitForSeconds(3);
+                Destroy(rockGen1.gameObject);
+                RockLayout1();
+            
         }
 
         IEnumerator RockRaise2(Vector3 startingPos)
         {
             Vector3 endPos = Vector3.zero;
+            Vector3 downPos = new Vector3(0f, -100f, 0f);
             while (Vector3.Distance(startingPos, endPos) > 0.5f)
             {
                 rockGen2.transform.position = Vector3.MoveTowards(startingPos, endPos, Time.deltaTime * RaiseSpeed);
@@ -140,6 +152,15 @@ public class UserDiablo : MonoBehaviour
                 yield return null;
             }
             yield return new WaitForSeconds(10);
+
+            while (Vector3.Distance(startingPos, downPos) > 0.5f)
+            {
+
+                rockGen1.transform.position = Vector3.MoveTowards(startingPos, downPos, Time.deltaTime * RaiseSpeed);
+                startingPos = rockGen1.transform.position;
+                yield return null;
+            }
+            yield return new WaitForSeconds(3);
             Destroy(rockGen2.gameObject);
             RockLayout2();
 

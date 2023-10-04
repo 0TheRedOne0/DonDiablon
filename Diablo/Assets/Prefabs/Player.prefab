@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 9143214284459804679}
   - component: {fileID: 6897652968014844233}
   m_Layer: 0
-  m_Name: CharacterProto
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -151,8 +151,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UserHP: 5
-  MaxHP: 5
-  MinHP: 0
   DonHP: {fileID: 0}
   AnimCotrol: {fileID: 0}
   CrashController: {fileID: 0}
@@ -167,6 +165,8 @@ MonoBehaviour:
   Boomerang: 1
   unarmedM: 0
   pistola: {fileID: 5053457806279062492}
+  barraDeVida: {fileID: 0}
+  maxHealth: 5
 --- !u!135 &6897652968014844233
 SphereCollider:
   m_ObjectHideFlags: 0
