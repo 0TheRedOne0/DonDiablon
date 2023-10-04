@@ -100,7 +100,7 @@ public class UserInputs : MonoBehaviour
         rotationInput.x = Joystick2.Horizontal;
         Vector3 DirRot = rotationInput;
        
-        Debug.Log(DirRot);
+      
 
          Quaternion rotacion = Quaternion.AngleAxis(DirRot.x*5, pistola.transform.up);
         //Quaternion rotacion = Quaternion.FromToRotation(Vector3.zero, DirRot*5); 

@@ -106,13 +106,13 @@ public class UserDiablo : MonoBehaviour
             StartCoroutine(RockRaise2(rockGen2.transform.position));
         }
 
-        IEnumerator CoolDown()
+       /* IEnumerator CoolDown()
         {
             yield return new WaitForSeconds(5);
 
 
 
-        }
+        }*/
         IEnumerator RockRaise1(Vector3 startingPos)
         {
             //Vector3 startingPos = rockGen1.transform.position;

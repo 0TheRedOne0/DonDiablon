@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3358049796728961454
+--- !u!1 &1873479721827061877
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,39 +8,39 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1134170547252628920}
-  - component: {fileID: 8992401781432410064}
-  - component: {fileID: 3272244560563985985}
+  - component: {fileID: 7708819261602415671}
+  - component: {fileID: 7447741950992749366}
+  - component: {fileID: 8018219391365782422}
   m_Layer: 0
-  m_Name: LHmissile
+  m_Name: RHmissile
   m_TagString: Hands
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1134170547252628920
+--- !u!4 &7708819261602415671
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3358049796728961454}
+  m_GameObject: {fileID: 1873479721827061877}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.655676, y: 11.050339, z: 51.260513}
+  m_LocalRotation: {x: -0.064444214, y: 0.99632716, z: 0.043639127, w: -0.035704184}
+  m_LocalPosition: {x: -58, y: 11.8, z: 71}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1891892346115038406}
+  - {fileID: 4768265363140407875}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &8992401781432410064
+  m_LocalEulerAnglesHint: {x: -4.724, y: 184.418, z: -7.584}
+--- !u!65 &7447741950992749366
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3358049796728961454}
+  m_GameObject: {fileID: 1873479721827061877}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -55,13 +55,13 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 38.03508, y: 35.288948, z: 28.451437}
   m_Center: {x: 3.1943512, y: 1.6060448, z: -2.9838448}
---- !u!114 &3272244560563985985
+--- !u!114 &8018219391365782422
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3358049796728961454}
+  m_GameObject: {fileID: 1873479721827061877}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4714766d73577c44f90af89f2fd1c791, type: 3}
@@ -71,15 +71,15 @@ MonoBehaviour:
   handsSpeed: 60
   handsFollowRate: 15
   LeftHandPos: {fileID: 0}
-  LH: {fileID: 3358049796728961454}
+  LH: {fileID: 1873479721827061877}
   cooldown: 0
---- !u!1001 &2147059708249963309
+--- !u!1001 &5018964267529213352
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1134170547252628920}
+    m_TransformParent: {fileID: 7708819261602415671}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 3faec405596d34c4cbcc8c9357f12dae,
         type: 3}
@@ -161,9 +161,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3faec405596d34c4cbcc8c9357f12dae, type: 3}
---- !u!4 &1891892346115038406 stripped
+--- !u!4 &4768265363140407875 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3faec405596d34c4cbcc8c9357f12dae,
     type: 3}
-  m_PrefabInstance: {fileID: 2147059708249963309}
+  m_PrefabInstance: {fileID: 5018964267529213352}
   m_PrefabAsset: {fileID: 0}
