@@ -43,9 +43,9 @@ public class UserDiablo : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "BulletDon")
+        if(collision.gameObject.tag == "DonBalas")
         {
-            Destroy(collision.gameObject);
+           
             currentHealth--;
             SetHealth(currentHealth);
         }

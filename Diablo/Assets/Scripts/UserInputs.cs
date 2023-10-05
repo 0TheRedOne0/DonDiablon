@@ -73,7 +73,7 @@ public class UserInputs : MonoBehaviour
         if(Joystick2.Horizontal != 0|| Joystick2.Vertical != 0)
         {
             
-            AttkCharge();
+            AttkBullets();
         }
     }
 
@@ -147,15 +147,15 @@ public class UserInputs : MonoBehaviour
         StartCoroutine(ColActivate()); 
     }
 
-    void AttkCharge()
+    void AttkBullets()
     {
         
         if (Boomerang == true )
         {
             Debug.Log("Funciona");
-                spawnedBullet=Instantiate(prefabToSpawn, transform.position, Quaternion.LookRotation(pistola.transform.right*-1));
-            spawnedBullet.GetComponent<BulletsDiablo>().speed = speed;
-            spawnedBullet.GetComponent<BulletsDiablo>().bulletLife = bulletLife;
+                spawnedBullet=Instantiate(prefabToSpawn, pistola.transform.position, Quaternion.LookRotation(pistola.transform.right*-1));
+            spawnedBullet.GetComponent<BulletsDonFix>().speed = speed;
+            spawnedBullet.GetComponent<BulletsDonFix>().bulletLife = bulletLife;
           //  spawnedBullet.transform.rotation = pistola.transform.rotation;
             //spawnedBullet.transform.Rotate(Prot.eulerAngles);
 
