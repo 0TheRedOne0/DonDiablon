@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class UserDiablo : MonoBehaviour
 {
-    public int currentHP = 200;
+    public int currentHealth = 200;
     public int maxHealth = 200;
     public int minHealth = 0;
     public Slider HPdiablo;
@@ -28,8 +28,8 @@ public class UserDiablo : MonoBehaviour
     // first frame update
     void Start()
     {
-        currentHP = maxHealth;
-        //HPdiablo.SetMaxHealth(maxHealth);
+        currentHealth = maxHealth;
+        HPdiablo.SetMaxHealth(maxHealth);
     }
 
     //once per frame
@@ -43,8 +43,8 @@ public class UserDiablo : MonoBehaviour
         if(collision.gameObject.tag == "BulletDon")
         {
             Destroy(collision.gameObject);
-            currentHP --;
-            SetHealth(currentHP);
+            currentHealth--;
+            SetHealth(currentHealth);
         }
     }
 
@@ -61,7 +61,7 @@ public class UserDiablo : MonoBehaviour
     }
     void Flags()
     {
-        if (currentHP <= 134)
+        if (currentHealth <= 134)
         {
             if (Arr1Stop == false)
             {
@@ -71,7 +71,7 @@ public class UserDiablo : MonoBehaviour
                 }
             }
         }
-        else if (currentHP <= 68)
+        else if (currentHealth <= 68)
         {
             Arr1Stop = true;
             Destroy(rockGen1.gameObject);
@@ -82,7 +82,7 @@ public class UserDiablo : MonoBehaviour
             }
         }
 
-        else if (currentHP == 0)
+        else if (currentHealth == 0)
         {
             GameWin.SetActive(true);
             
