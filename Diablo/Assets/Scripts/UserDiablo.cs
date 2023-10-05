@@ -29,7 +29,7 @@ public class UserDiablo : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
-        HPdiablo.SetMaxHealth(maxHealth);
+        //HPdiablo.SetMaxHealth(maxHealth);
     }
 
     //once per frame
