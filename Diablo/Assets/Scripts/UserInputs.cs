@@ -20,6 +20,8 @@ public class UserInputs : MonoBehaviour
     //Movement Variables
     public Rigidbody RB;
     public float moveSpeed;
+    float rotationSpeed = 20;
+
     private Vector2 moveInput;
 
     //Rot variables
@@ -116,16 +118,30 @@ public class UserInputs : MonoBehaviour
         rotationInput.x = Joystick2.Horizontal;
         Vector3 DirRot = rotationInput;
 
+        if (Mathf.Approximately(rotationInput.x, 0f) && Mathf.Approximately(rotationInput.y, 0f))
+            return;
+
+        float targetAngle = Mathf.Atan2(rotationInput.x, rotationInput.y) * Mathf.Rad2Deg;
+
+        Quaternion targetRotation = Quaternion.Euler(0, targetAngle, 0);
+
+        transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
 
 
-        Quaternion rotacion = Quaternion.AngleAxis(DirRot.x * 5, pistola.transform.up);
-        //Quaternion rotacion = Quaternion.FromToRotation(Vector3.zero, DirRot*5); 
+       /* rotationInput.y = Joystick2.Vertical;
+         rotationInput.x = Joystick2.Horizontal;
+         Vector3 DirRot = rotationInput;
 
-        Prot = rotacion;
 
 
-       pistola.transform.Rotate(rotacion.eulerAngles);
-        
+         Quaternion rotacion = Quaternion.AngleAxis(DirRot.x * 5, pistola.transform.up);
+         //Quaternion rotacion = Quaternion.FromToRotation(Vector3.zero, DirRot*5); 
+
+         Prot = rotacion;
+
+
+        pistola.transform.Rotate(rotacion.eulerAngles);*/
+
     }
 
     void AttkCaC()
@@ -156,7 +172,7 @@ public class UserInputs : MonoBehaviour
     IEnumerator waitBoomerang()
     {
         
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(0.3f);
      ///   unarmedM = false;
         Boomerang = true;
         Debug.Log("termino el tiempo");
