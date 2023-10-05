@@ -75,7 +75,7 @@ public class UserInputs : MonoBehaviour
         if(Joystick2.Horizontal != 0|| Joystick2.Vertical != 0)
         {
             
-            AttkCharge();
+            AttkShoot();
         }
     }
 
@@ -149,15 +149,15 @@ public class UserInputs : MonoBehaviour
         StartCoroutine(ColActivate()); 
     }
 
-    void AttkCharge()
+    void AttkShoot()
     {
         
         if (Boomerang == true )
         {
-            Debug.Log("Funciona");
-                spawnedBullet=Instantiate(prefabToSpawn, transform.position, Quaternion.LookRotation(pistola.transform.right*-1));
-            spawnedBullet.GetComponent<BulletsDiablo>().speed = speed;
-            spawnedBullet.GetComponent<BulletsDiablo>().bulletLife = bulletLife;
+            //Debug.Log("Funciona");
+                spawnedBullet=Instantiate(prefabToSpawn, pistola.transform.position, Quaternion.LookRotation(pistola.transform.right*-1));
+            spawnedBullet.GetComponent<BulletsDon>().speed = speed;
+            spawnedBullet.GetComponent<BulletsDon>().bulletLife = bulletLife;
           //  spawnedBullet.transform.rotation = pistola.transform.rotation;
             //spawnedBullet.transform.Rotate(Prot.eulerAngles);
 
@@ -172,10 +172,10 @@ public class UserInputs : MonoBehaviour
     IEnumerator waitBoomerang()
     {
         
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.5f);
      ///   unarmedM = false;
         Boomerang = true;
-        Debug.Log("termino el tiempo");
+        //Debug.Log("termino el tiempo");
     }
 
 

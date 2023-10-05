@@ -10,6 +10,7 @@ public class LHandsScript : MonoBehaviour
 
     public GameObject LeftHandPos;
     public GameObject LH;
+    public int HPlefthand=3;
 
     //public bool LHdie=false;
     //public int numLH = 1;
@@ -35,21 +36,19 @@ public class LHandsScript : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             StartCoroutine(waitNdie());
-          
-        }
-        else if (collision.gameObject.tag == "Obstacle")
-        {
-            Destroy(this.gameObject);
 
         }
-
+        else if (collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "DonBalas")
+            HPlefthand--;
+            
+       
     }
    
     // Update is called once per frame
     void Update()
     {
         HandsAttk();
-
+        DIE();
        
     }
 
@@ -64,6 +63,14 @@ public class LHandsScript : MonoBehaviour
         } 
        
      
+    }
+
+    void DIE()
+    {
+        if(HPlefthand<= 0)
+        {
+            StartCoroutine(dienNwait());
+        }
     }
 
 
@@ -81,7 +88,16 @@ public class LHandsScript : MonoBehaviour
         yield return new WaitForSeconds(10);
         cooldown = false;
     }
-    
+    IEnumerator dienNwait()
+    {
+
+        transform.position = leftPos;
+        transform.rotation = leftRot;
+        cooldown = true;
+        yield return new WaitForSeconds(10);
+        cooldown = false;
+    }
+
 
 }
 
