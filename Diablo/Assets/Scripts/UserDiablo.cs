@@ -5,10 +5,12 @@ using UnityEngine.UI;
 
 public class UserDiablo : MonoBehaviour
 {
+   //VIDA DIABLO
     public int currentHealth = 200;
     public int maxHealth = 200;
     public int minHealth = 0;
     public Slider HPdiablo;
+
 
     public GameObject GameWin;
 
@@ -24,12 +26,13 @@ public class UserDiablo : MonoBehaviour
 
     public float RaiseSpeed = 100f;
 
+    
 
     // first frame update
     void Start()
     {
         currentHealth = maxHealth;
-        HPdiablo.SetMaxHealth(maxHealth);
+        //HPdiablo.SetMaxHealth(maxHealth);
     }
 
     //once per frame
