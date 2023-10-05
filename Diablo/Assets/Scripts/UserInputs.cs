@@ -37,6 +37,7 @@ public class UserInputs : MonoBehaviour
     private GameObject spawnedBullet;
     public float bulletLife = 1f;
     public float speed = 1f;
+    private MeshRenderer Visible;
 
     //public Machete[] macheteArray;
     public bool Boomerang = true;
@@ -156,12 +157,15 @@ public class UserInputs : MonoBehaviour
                 spawnedBullet=Instantiate(prefabToSpawn, pistola.transform.position, Quaternion.LookRotation(pistola.transform.right*-1));
             spawnedBullet.GetComponent<BulletsDonFix>().speed = speed;
             spawnedBullet.GetComponent<BulletsDonFix>().bulletLife = bulletLife;
-          //  spawnedBullet.transform.rotation = pistola.transform.rotation;
+            //  spawnedBullet.transform.rotation = pistola.transform.rotation;
             //spawnedBullet.transform.Rotate(Prot.eulerAngles);
+            StartCoroutine(wait());
 
+
+            
 
             Boomerang = false;
-        //    unarmedM = true;
+          //    unarmedM = true;
             StartCoroutine(waitBoomerang());
         }
 
@@ -182,6 +186,14 @@ public class UserInputs : MonoBehaviour
         CaC.enabled = true;     
         yield return new WaitForSeconds(1);
         CaC.enabled = false;
+    }
+    IEnumerator wait()
+    {
+        
+        yield return new WaitForSeconds(1);
+        Visible = spawnedBullet.GetComponentInChildren<MeshRenderer>();
+        Visible.enabled = true;
+
     }
 }
 
