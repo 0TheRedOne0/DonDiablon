@@ -15,7 +15,7 @@ C:/Users/Angelicraft/Desktop/DIABLO/DonDiablon/Diablo
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54302
+49324
 Successfully changed project path to: C:/Users/Angelicraft/Desktop/DIABLO/DonDiablon/Diablo
 C:/Users/Angelicraft/Desktop/DIABLO/DonDiablon/Diablo
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ C:/Users/Angelicraft/Desktop/DIABLO/DonDiablon/Diablo
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [15264] Host "[IP] 10.25.91.183 [Port] 0 [Flags] 2 [Guid] 2696560248 [EditorId] 2696560248 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-7U9VBDI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [16236] Host "[IP] 10.25.91.183 [Port] 0 [Flags] 2 [Guid] 2218702366 [EditorId] 2218702366 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-7U9VBDI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [15264] Host "[IP] 10.25.91.183 [Port] 0 [Flags] 2 [Guid] 2696560248 [EditorId] 2696560248 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-7U9VBDI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [16236] Host "[IP] 10.25.91.183 [Port] 0 [Flags] 2 [Guid] 2218702366 [EditorId] 2218702366 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-7U9VBDI) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 22.15 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 48.08 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.5f1 (9674261d40ee)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/Resources/UnitySubsystems
@@ -69,46 +69,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56204
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56100
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.026570 seconds.
-- Loaded All Assemblies, in  0.803 seconds
+Registered in 0.037690 seconds.
+- Loaded All Assemblies, in  0.981 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.538 seconds
-Domain Reload Profiling: 1337ms
-	BeginReloadAssembly (226ms)
+- Finished resetting the current domain, in  0.603 seconds
+Domain Reload Profiling: 1580ms
+	BeginReloadAssembly (301ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (82ms)
-	RebuildNativeTypeToScriptingClass (23ms)
-	initialDomainReloadingComplete (134ms)
-	LoadAllAssembliesAndSetupDomain (334ms)
-		LoadAssemblies (223ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (94ms)
+	RebuildNativeTypeToScriptingClass (26ms)
+	initialDomainReloadingComplete (163ms)
+	LoadAllAssembliesAndSetupDomain (392ms)
+		LoadAssemblies (288ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (319ms)
-			TypeCache.Refresh (317ms)
-				TypeCache.ScanAssembly (294ms)
+		AnalyzeDomain (378ms)
+			TypeCache.Refresh (375ms)
+				TypeCache.ScanAssembly (344ms)
 			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (538ms)
+	FinalizeReload (604ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (432ms)
+		SetupLoadedEditorAssemblies (468ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (24ms)
-			SetLoadedEditorAssemblies (8ms)
+			InitializePlatformSupportModulesInManaged (28ms)
+			SetLoadedEditorAssemblies (11ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (4ms)
-			ProcessInitializeOnLoadAttributes (302ms)
-			ProcessInitializeOnLoadMethodAttributes (93ms)
+			ProcessInitializeOnLoadAttributes (320ms)
+			ProcessInitializeOnLoadMethodAttributes (104ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -118,57 +118,58 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Angelicraft\Desktop\DIABLO\DonDiablon\Diablo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Angelicraft\Desktop\DIABLO\DonDiablon\Diablo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.795 seconds
-Refreshing native plugins compatible for Editor in 12.85 ms, found 3 plugins.
+- Loaded All Assemblies, in  2.266 seconds
+Refreshing native plugins compatible for Editor in 9.78 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.554 seconds
-Domain Reload Profiling: 3341ms
-	BeginReloadAssembly (237ms)
+- Finished resetting the current domain, in  2.079 seconds
+Domain Reload Profiling: 4337ms
+	BeginReloadAssembly (288ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (12ms)
+		DisableScriptedObjects (14ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (35ms)
-	RebuildCommonClasses (73ms)
-	RebuildNativeTypeToScriptingClass (17ms)
-	initialDomainReloadingComplete (88ms)
-	LoadAllAssembliesAndSetupDomain (1371ms)
-		LoadAssemblies (735ms)
+		CreateAndSetChildDomain (46ms)
+	RebuildCommonClasses (76ms)
+	RebuildNativeTypeToScriptingClass (25ms)
+	initialDomainReloadingComplete (101ms)
+	LoadAllAssembliesAndSetupDomain (1766ms)
+		LoadAssemblies (791ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (735ms)
-			TypeCache.Refresh (652ms)
-				TypeCache.ScanAssembly (613ms)
-			ScanForSourceGeneratedMonoScriptInfo (60ms)
-			ResolveRequiredComponents (22ms)
-	FinalizeReload (1556ms)
+		AnalyzeDomain (1107ms)
+			TypeCache.Refresh (1017ms)
+				TypeCache.ScanAssembly (976ms)
+			ScanForSourceGeneratedMonoScriptInfo (66ms)
+			ResolveRequiredComponents (24ms)
+	FinalizeReload (2081ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1184ms)
+		SetupLoadedEditorAssemblies (1547ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (18ms)
-			SetLoadedEditorAssemblies (8ms)
+			InitializePlatformSupportModulesInManaged (41ms)
+			SetLoadedEditorAssemblies (14ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (178ms)
-			ProcessInitializeOnLoadAttributes (781ms)
-			ProcessInitializeOnLoadMethodAttributes (169ms)
-			AfterProcessingInitializeOnLoad (30ms)
+			BeforeProcessingInitializeOnLoad (267ms)
+			ProcessInitializeOnLoadAttributes (1002ms)
+			ProcessInitializeOnLoadMethodAttributes (201ms)
+			AfterProcessingInitializeOnLoad (21ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (17ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
-Refreshing native plugins compatible for Editor in 11.42 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (19ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
+Refreshing native plugins compatible for Editor in 16.05 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 5342 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 71 unused Assets / (352.8 KB). Loaded Objects now: 5806.
-Memory consumption went from 211.8 MB to 211.5 MB.
-Total: 28.081500 ms (FindLiveObjects: 7.642700 ms CreateObjectMapping: 1.203000 ms MarkObjects: 14.217700 ms  DeleteObjects: 5.016300 ms)
+Memory consumption went from 211.8 MB to 211.4 MB.
+Total: 22.210800 ms (FindLiveObjects: 1.305800 ms CreateObjectMapping: 6.438100 ms MarkObjects: 11.030800 ms  DeleteObjects: 3.426100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
@@ -178,52 +179,70 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 183926.304140 seconds.
-  path: Assets/Prefabs/BulletSpawner2.prefab
-  artifactKey: Guid(61409d6d087ae0145b0566e50aaaa1a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/BulletSpawner2.prefab using Guid(61409d6d087ae0145b0566e50aaaa1a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '521d5dd07170a28632b008465b29f827') in 0.062321 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 21
-========================================================================
-Received Import Request.
-  Time since last request: 0.000067 seconds.
-  path: Assets/Prefabs/Bala2.fbx
-  artifactKey: Guid(72e85f44afdad5e4c9fa17726ff10cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Bala2.fbx using Guid(72e85f44afdad5e4c9fa17726ff10cbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28c0476d97f52cca20b8cb73dac21462') in 0.003722 seconds
+  Time since last request: 205041.031502 seconds.
+  path: Assets/Shader/Piedra1.fbx
+  artifactKey: Guid(be9cd236e87ff9f429ca2b32384ac4f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader/Piedra1.fbx using Guid(be9cd236e87ff9f429ca2b32384ac4f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf68c82a2e1e3b48be38586f95c418bc') in 0.034774 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 7
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Prefabs/RocaText.mat
-  artifactKey: Guid(adf31d05bef8d554eb0846af6ae77ee3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/RocaText.mat using Guid(adf31d05bef8d554eb0846af6ae77ee3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95a7ae7c19659d420696d7930e2c6601') in 0.003279 seconds
+  Time since last request: 322.988584 seconds.
+  path: Assets/Shader/lambert1_ORM_Bala2.png
+  artifactKey: Guid(f3a50797e1fdb814dbee14a9d77f2658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader/lambert1_ORM_Bala2.png using Guid(f3a50797e1fdb814dbee14a9d77f2658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeeb795854362734133035177a0cd0bb') in 0.010833 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Prefabs/Player.prefab
-  artifactKey: Guid(2c8d30d242d5e5d4c98165726cc87621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player.prefab using Guid(2c8d30d242d5e5d4c98165726cc87621) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b34942aa15d586585560bcb0fa7e41da') in 0.007774 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 16
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Prefabs/Arbol2Color Variant.prefab
-  artifactKey: Guid(a4191038cce319247bc5bd75f2eec6ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Arbol2Color Variant.prefab using Guid(a4191038cce319247bc5bd75f2eec6ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '015c6556704ab094a1d8ac84ca366ad7') in 0.007064 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 6
-========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 7.80 ms, found 3 plugins.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Angelicraft\Desktop\DIABLO\DonDiablon\Diablo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Angelicraft\Desktop\DIABLO\DonDiablon\Diablo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.566 seconds
+Refreshing native plugins compatible for Editor in 11.29 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.593 seconds
+Domain Reload Profiling: 5150ms
+	BeginReloadAssembly (336ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (3ms)
+		CreateAndSetChildDomain (90ms)
+	RebuildCommonClasses (68ms)
+	RebuildNativeTypeToScriptingClass (20ms)
+	initialDomainReloadingComplete (73ms)
+	LoadAllAssembliesAndSetupDomain (1059ms)
+		LoadAssemblies (594ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (608ms)
+			TypeCache.Refresh (591ms)
+				TypeCache.ScanAssembly (550ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (16ms)
+	FinalizeReload (3594ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1011ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (173ms)
+			ProcessInitializeOnLoadAttributes (682ms)
+			ProcessInitializeOnLoadMethodAttributes (116ms)
+			AfterProcessingInitializeOnLoad (17ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (24ms)
+Refreshing native plugins compatible for Editor in 13.77 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 2 unused Assets / (290.7 KB). Loaded Objects now: 5809.
-Memory consumption went from 102.2 MB to 102.0 MB.
-Total: 7.724200 ms (FindLiveObjects: 0.627600 ms CreateObjectMapping: 0.747200 ms MarkObjects: 6.219500 ms  DeleteObjects: 0.128300 ms)
+Unloading 5176 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 40 unused Assets / (318.7 KB). Loaded Objects now: 5811.
+Memory consumption went from 182.8 MB to 182.4 MB.
+Total: 13.474700 ms (FindLiveObjects: 1.972600 ms CreateObjectMapping: 1.933100 ms MarkObjects: 9.249400 ms  DeleteObjects: 0.316400 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -240,241 +259,73 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 511.205310 seconds.
-  path: Assets/Prefabs/Rocas2/R2E.prefab
-  artifactKey: Guid(c92dc8a9e69c45a4dac73e2f9bd2b480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rocas2/R2E.prefab using Guid(c92dc8a9e69c45a4dac73e2f9bd2b480) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b5b3ca7668e98831adf60594049e37d') in 0.006001 seconds
+  Time since last request: 3426.973114 seconds.
+  path: Assets/Shader/lambert1_ORM_P.png
+  artifactKey: Guid(0a4049d6603d25e47bc682ba55aa5f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shader/lambert1_ORM_P.png using Guid(0a4049d6603d25e47bc682ba55aa5f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0073cef4a400e1b920a17a62289a5e84') in 0.231630 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 40
+Number of asset objects unloaded after import = 1
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Prefabs/Rocas2/Point Light (1).prefab
-  artifactKey: Guid(602da40595e9375418dc5407e386f9af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rocas2/Point Light (1).prefab using Guid(602da40595e9375418dc5407e386f9af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4680833403124927aa041866e1a68faf') in 0.003100 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Prefabs/Rocas2/R2A.prefab
-  artifactKey: Guid(935b0300451fa364a9ec097728e46497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rocas2/R2A.prefab using Guid(935b0300451fa364a9ec097728e46497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39fd799bb148fe9b54023dee33ec5c21') in 0.002914 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 40
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Prefabs/Rocas2/R2B.prefab
-  artifactKey: Guid(3c9e2f2ebe1aaef4b86d7a00eb09712f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Rocas2/R2B.prefab using Guid(3c9e2f2ebe1aaef4b86d7a00eb09712f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f190731a4a585a52d7e40b610b116d2') in 0.003526 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 40
-========================================================================
-Received Import Request.
-  Time since last request: 17.279632 seconds.
-  path: Assets/Prefabs/Spawner.prefab
-  artifactKey: Guid(82ea4fe3fd87f0c43a1d23afa3a16d61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Spawner.prefab using Guid(82ea4fe3fd87f0c43a1d23afa3a16d61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e176654acf0b91cc7189dd809ffb9c8') in 0.001999 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 6
-========================================================================
-Received Import Request.
-  Time since last request: 19.585196 seconds.
-  path: Assets/Prefabs/LuzAzul.prefab
-  artifactKey: Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/LuzAzul.prefab using Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2af130496a0fb7716ba50e6f8ae05569') in 0.001882 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 166.881754 seconds.
-  path: Assets/Prefabs/LuzAzul.prefab
-  artifactKey: Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/LuzAzul.prefab using Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e2db9ab6ba29b5054fbb74d3453b469') in 0.001927 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 93.119118 seconds.
-  path: Assets/Prefabs/LuzAzul.prefab
-  artifactKey: Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/LuzAzul.prefab using Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df14f2864d4e60365ded93047d08cb64') in 0.001824 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 0.176991 seconds.
-  path: Assets/Prefabs/LuzAzul.prefab
-  artifactKey: Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/LuzAzul.prefab using Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '905ce3bdaddaf5e4de51fdac414060af') in 0.001637 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 2.033294 seconds.
-  path: Assets/Prefabs/LuzAzul.prefab
-  artifactKey: Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/LuzAzul.prefab using Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bc9a4a128fa21a1b051a1f19a7ea2e9') in 0.002260 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 1.393211 seconds.
-  path: Assets/Prefabs/LuzAzul.prefab
-  artifactKey: Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/LuzAzul.prefab using Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '167208a4b348ab7423a703a352baca3d') in 0.001792 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 1.390682 seconds.
-  path: Assets/Prefabs/LuzAzul.prefab
-  artifactKey: Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/LuzAzul.prefab using Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77dbf9c6eed92dd0818121f9c3dc2267') in 0.001787 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 3.822622 seconds.
-  path: Assets/Prefabs/LuzAzul.prefab
-  artifactKey: Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/LuzAzul.prefab using Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baeff1ec83637fe88ab2533e49f11ebe') in 0.001712 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 1.807460 seconds.
-  path: Assets/Prefabs/LuzAzul.prefab
-  artifactKey: Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/LuzAzul.prefab using Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6738db461f20517e463143226d9f5871') in 0.001670 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 1.206490 seconds.
-  path: Assets/Prefabs/LuzAzul.prefab
-  artifactKey: Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/LuzAzul.prefab using Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e029fab4995e7c56bff968f4438fe3d') in 0.001587 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 0.776995 seconds.
-  path: Assets/Prefabs/LuzAzul.prefab
-  artifactKey: Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/LuzAzul.prefab using Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4f3bda5c6bd8448bb77dd0f2c0bb10e') in 0.001934 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 1.000515 seconds.
-  path: Assets/Prefabs/LuzAzul.prefab
-  artifactKey: Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/LuzAzul.prefab using Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faf7a8bddc73238a9ad30e24c804d292') in 0.002065 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 1.195896 seconds.
-  path: Assets/Prefabs/LuzAzul.prefab
-  artifactKey: Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/LuzAzul.prefab using Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f26bf0dee3493cfd453a40aec305093b') in 0.001638 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 0.399024 seconds.
-  path: Assets/Prefabs/LuzAzul.prefab
-  artifactKey: Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/LuzAzul.prefab using Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81398ce0e7356a3760ab044dc802e349') in 0.001610 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 1.192307 seconds.
-  path: Assets/Prefabs/LuzAzul.prefab
-  artifactKey: Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/LuzAzul.prefab using Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '640474e26e495ec56894a4fe0126c593') in 0.001723 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 1.238904 seconds.
-  path: Assets/Prefabs/LuzAzul.prefab
-  artifactKey: Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/LuzAzul.prefab using Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d251033664c8766ea8cf5cf98748504') in 0.001852 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 1.968972 seconds.
-  path: Assets/Prefabs/LuzAzul.prefab
-  artifactKey: Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/LuzAzul.prefab using Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd511e048ae2d7035af76172389aff424') in 0.001790 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 0.798820 seconds.
-  path: Assets/Prefabs/LuzAzul.prefab
-  artifactKey: Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/LuzAzul.prefab using Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b391c7fe30d3d2cabe8227d6f935985b') in 0.001618 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 3.007206 seconds.
-  path: Assets/Prefabs/LuzAzul.prefab
-  artifactKey: Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/LuzAzul.prefab using Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f906274c39ab57b271699f733230f438') in 0.002024 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 0.591824 seconds.
-  path: Assets/Prefabs/LuzAzul.prefab
-  artifactKey: Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/LuzAzul.prefab using Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a06f2e5b972f7ca7d67383bb952fbe8d') in 0.002058 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 0.604928 seconds.
-  path: Assets/Prefabs/LuzAzul.prefab
-  artifactKey: Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/LuzAzul.prefab using Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87158527e394c28d4d9ddbf8807b2373') in 0.002243 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 0.802836 seconds.
-  path: Assets/Prefabs/LuzAzul.prefab
-  artifactKey: Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/LuzAzul.prefab using Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60240f71f2d362b3f56a48648ef05285') in 0.001639 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 1.200126 seconds.
-  path: Assets/Prefabs/LuzAzul.prefab
-  artifactKey: Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/LuzAzul.prefab using Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd313638c791c2b99576a8d88af214316') in 0.001832 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 0.770840 seconds.
-  path: Assets/Prefabs/LuzAzul.prefab
-  artifactKey: Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/LuzAzul.prefab using Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7639554d28f40eb14880945506a33b49') in 0.001692 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 1.406875 seconds.
-  path: Assets/Prefabs/LuzAzul.prefab
-  artifactKey: Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/LuzAzul.prefab using Guid(2dea67736cd9ca94e8ad031a11d462f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd00ea209cc0e1b793bdbee0c52926982') in 0.001892 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 5
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Angelicraft\Desktop\DIABLO\DonDiablon\Diablo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Angelicraft\Desktop\DIABLO\DonDiablon\Diablo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  2.060 seconds
+Refreshing native plugins compatible for Editor in 8.30 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  4.219 seconds
+Domain Reload Profiling: 6274ms
+	BeginReloadAssembly (516ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (21ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (2ms)
+		CreateAndSetChildDomain (221ms)
+	RebuildCommonClasses (70ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (63ms)
+	LoadAllAssembliesAndSetupDomain (1386ms)
+		LoadAssemblies (880ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (658ms)
+			TypeCache.Refresh (638ms)
+				TypeCache.ScanAssembly (590ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (20ms)
+	FinalizeReload (4220ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1241ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (21ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (217ms)
+			ProcessInitializeOnLoadAttributes (792ms)
+			ProcessInitializeOnLoadMethodAttributes (175ms)
+			AfterProcessingInitializeOnLoad (28ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (47ms)
+Refreshing native plugins compatible for Editor in 14.01 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5176 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 40 unused Assets / (318.9 KB). Loaded Objects now: 5815.
+Memory consumption went from 182.8 MB to 182.5 MB.
+Total: 16.777000 ms (FindLiveObjects: 1.266200 ms CreateObjectMapping: 1.202000 ms MarkObjects: 13.756800 ms  DeleteObjects: 0.549100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
