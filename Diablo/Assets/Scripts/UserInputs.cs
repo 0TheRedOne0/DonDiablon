@@ -106,7 +106,7 @@ public class UserInputs : MonoBehaviour
             UserHP--;
             currentHealth -= 1;
             barraDeVida.SetHealth(currentHealth);
-            Debug.Log("-1 HP");
+            //Debug.Log("-1 HP");
         }
     }
 
@@ -126,21 +126,6 @@ public class UserInputs : MonoBehaviour
 
         transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
 
-
-       /* rotationInput.y = Joystick2.Vertical;
-         rotationInput.x = Joystick2.Horizontal;
-         Vector3 DirRot = rotationInput;
-
-
-
-         Quaternion rotacion = Quaternion.AngleAxis(DirRot.x * 5, pistola.transform.up);
-         //Quaternion rotacion = Quaternion.FromToRotation(Vector3.zero, DirRot*5); 
-
-         Prot = rotacion;
-
-
-        pistola.transform.Rotate(rotacion.eulerAngles);*/
-
     }
 
     void AttkCaC()
@@ -153,7 +138,7 @@ public class UserInputs : MonoBehaviour
         
         if (Boomerang == true )
         {
-            Debug.Log("Funciona");
+            //Debug.Log("Funciona");
                 spawnedBullet=Instantiate(prefabToSpawn, pistola.transform.position, Quaternion.LookRotation(pistola.transform.right*-1));
             spawnedBullet.GetComponent<BulletsDonFix>().speed = speed;
             spawnedBullet.GetComponent<BulletsDonFix>().bulletLife = bulletLife;
