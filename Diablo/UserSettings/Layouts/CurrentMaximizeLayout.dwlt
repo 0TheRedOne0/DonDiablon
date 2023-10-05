@@ -238,10 +238,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 125}
-      m_SelectedIDs: 8a6b0000
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: d46b0000
       m_LastClickedID: 0
-      m_ExpandedIDs: 04a0edff24fbffff466c0000586c0000
+      m_ExpandedIDs: 50faffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -897,7 +897,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Shader
+    - Assets/Templatestuff
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -905,16 +905,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Shader
+  - Assets/Templatestuff
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Angelicraft\Desktop\DIABLO\DonDiablon\Diablo
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 111}
-    m_SelectedIDs: d8720000
-    m_LastClickedID: 29400
-    m_ExpandedIDs: 00000000f870000000ca9a3b
+    m_SelectedIDs: b0730000
+    m_LastClickedID: 29616
+    m_ExpandedIDs: 00000000d471000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -942,7 +942,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f870000000ca9a3b
+    m_ExpandedIDs: 00000000d4710000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -967,9 +967,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 8a6b0000
-    m_LastClickedInstanceID: 27530
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs: d46b0000
+    m_LastClickedInstanceID: 27604
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c62300008af40000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -994,7 +994,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 89}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 115
