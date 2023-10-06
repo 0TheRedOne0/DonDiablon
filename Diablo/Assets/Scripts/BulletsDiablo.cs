@@ -50,7 +50,7 @@ public class BulletsDiablo : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player" || collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "DonBalas"||collision.gameObject.tag == "Hands" )
         {
             Destroy(this.gameObject);
 

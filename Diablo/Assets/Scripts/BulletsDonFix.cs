@@ -47,7 +47,7 @@ public class BulletsDonFix : MonoBehaviour
 
         void OnCollisionEnter(Collision collision)
         {
-            if (collision.gameObject.tag == "Diablo" || collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Hands")
+            if (collision.gameObject.tag == "Diablo" || collision.gameObject.tag == "Obstacle" || collision.gameObject.tag == "Hands" || collision.gameObject.tag == "Balas")
             {
                 Destroy(this.gameObject);
 
