@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class UserDiablo : MonoBehaviour
 {
    //VIDA DIABLO
-    public int currentHealth = 200;
-    public int maxHealth = 200;
+    public int DcurrentHealth = 200;
+    public int DmaxHealth = 200;
     public int minHealth = 0;
     public Slider HPdiablo;
     public Vida barraDeVidaDiablo;
@@ -32,8 +32,8 @@ public class UserDiablo : MonoBehaviour
     // first frame update
     void Start()
     {
-        currentHealth = maxHealth;
-        barraDeVidaDiablo.SetMaxHealth(maxHealth);
+        DcurrentHealth = DmaxHealth;
+        barraDeVidaDiablo.SetMaxHealth(DmaxHealth);
     }
 
     //once per frame
@@ -46,28 +46,23 @@ public class UserDiablo : MonoBehaviour
     {
         if(collision.gameObject.tag == "DonBalas")
         {
-           
-            currentHealth--;
-            SetHealth(currentHealth);
-            barraDeVidaDiablo.SetHealth(currentHealth);
+
+            DcurrentHealth--;
+            SetHealth(DcurrentHealth);
+            barraDeVidaDiablo.SetHealth(DcurrentHealth);
             Debug.Log("-1 Diablo");
         }
     }
 
-    public void SetMaxHealth(int maxHealth)
-    {
+  
 
-        HPdiablo.maxValue = maxHealth;
-        HPdiablo.value = maxHealth;
-    }
-
-    public void SetHealth(int healthActual) // el SetHealth es para bautizar 
+    public void SetHealth(int DhealthActual) // el SetHealth es para bautizar 
     {
-        HPdiablo.value = healthActual;
+        HPdiablo.value = DhealthActual;
     }
     void Flags()
     {
-        if (currentHealth <= 134)
+        if (DcurrentHealth <= 134)
         {
             if (Arr1Stop == false)
             {
@@ -77,7 +72,7 @@ public class UserDiablo : MonoBehaviour
                 }
             }
         }
-        else if (currentHealth <= 68)
+        else if (DcurrentHealth <= 68)
         {
             Arr1Stop = true;
             Destroy(rockGen1.gameObject);
@@ -88,7 +83,7 @@ public class UserDiablo : MonoBehaviour
             }
         }
 
-        else if (currentHealth == 0)
+        else if (DcurrentHealth == 0)
         {
             GameWin.SetActive(true);
             

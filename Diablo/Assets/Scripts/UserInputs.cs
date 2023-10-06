@@ -6,7 +6,7 @@ using TMPro;
 
 public class UserInputs : MonoBehaviour
 {
-    public float UserHP=5;
+    
     public Slider DonHP;
     public Animator AnimCotrol;
     public Animator CrashController;
@@ -79,7 +79,7 @@ public class UserInputs : MonoBehaviour
 
     void Death()
     {
-        if(UserHP <= 0)
+        if (maxHealth <= 0)
         {
             GameOver.SetActive(true);
             MainCamera.SetActive(false);
@@ -102,7 +102,7 @@ public class UserInputs : MonoBehaviour
     {
         if (other.CompareTag("Balas")|| other.CompareTag("Hands"))
         {
-            UserHP--;
+            
             currentHealth -= 1;
             barraDeVida.SetHealth(currentHealth);
             Debug.Log("-1 HP");
