@@ -10,6 +10,7 @@ public class UserDiablo : MonoBehaviour
     public int maxHealth = 200;
     public int minHealth = 0;
     public Slider HPdiablo;
+    public Vida barraDeVidaDiablo;
 
 
     public GameObject GameWin;
@@ -32,7 +33,7 @@ public class UserDiablo : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
-        //HPdiablo.SetMaxHealth(maxHealth);
+        barraDeVidaDiablo.SetMaxHealth(maxHealth);
     }
 
     //once per frame
@@ -48,6 +49,8 @@ public class UserDiablo : MonoBehaviour
            
             currentHealth--;
             SetHealth(currentHealth);
+            barraDeVidaDiablo.SetHealth(currentHealth);
+            Debug.Log("-1 Diablo");
         }
     }
 
