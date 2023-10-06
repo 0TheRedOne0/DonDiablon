@@ -14,15 +14,15 @@ public class VidaDiablo : MonoBehaviour
          
     }
 
-    public void SetMaxHealth(int maxHealth)
+    public void SetMaxHealth(int DmaxHealth)
     {
 
-        HPdiablo.maxValue = maxHealth;
-        HPdiablo.value = maxHealth;
+        HPdiablo.maxValue = DmaxHealth;
+        HPdiablo.value = DmaxHealth;
     }
 
-    public void SetHealth(int healthActual) 
+    public void SetHealth(int DhealthActual) 
     {
-        HPdiablo.value = healthActual;
+        HPdiablo.value = DhealthActual;
     }
 }
