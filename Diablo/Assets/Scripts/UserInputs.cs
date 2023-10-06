@@ -174,7 +174,7 @@ public class UserInputs : MonoBehaviour
     IEnumerator waitBoomerang()
     {
         
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.6f);
      ///   unarmedM = false;
         Boomerang = true;
         Debug.Log("termino el tiempo");
@@ -190,7 +190,7 @@ public class UserInputs : MonoBehaviour
     IEnumerator wait()
     {
         
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.25f);
         Visible = spawnedBullet.GetComponentInChildren<MeshRenderer>();
         Visible.enabled = true;
 

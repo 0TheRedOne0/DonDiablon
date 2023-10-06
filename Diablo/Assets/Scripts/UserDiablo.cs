@@ -67,15 +67,9 @@ public class UserDiablo : MonoBehaviour
     }
     void Flags()
     {
-        if (currentHealth <= 134)
+        if (currentHealth <= 134 && Arr1Stop == false && Arr1Active == false)
         {
-            if (Arr1Stop == false)
-            {
-                if (Arr1Active == false)
-                {
                     RockLayout1();
-                }
-            }
         }
         else if (currentHealth <= 68)
         {

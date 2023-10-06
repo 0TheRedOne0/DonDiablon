@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731707, g: 0.13414726, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1817,7 +1817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92ce88a12bf344012bb146e584c81c30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 200
+  currentHealth: 130
   maxHealth: 200
   minHealth: 0
   HPdiablo: {fileID: 66317274}
@@ -3255,7 +3255,7 @@ PrefabInstance:
     - target: {fileID: 3620280577651406552, guid: 24d5d36a580740a4389045824ee9adcd,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6374,7 +6374,7 @@ PrefabInstance:
     - target: {fileID: 7999291405740191961, guid: 61409d6d087ae0145b0566e50aaaa1a5,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
