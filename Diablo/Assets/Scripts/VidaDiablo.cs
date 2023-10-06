@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Vida : MonoBehaviour
+public class VidaDiablo : MonoBehaviour
 {
 
-    public Slider DonHP;
+    public Slider HPdiablo;
 
     // Start 
     void Start()
@@ -16,13 +16,13 @@ public class Vida : MonoBehaviour
 
     public void SetMaxHealth(int maxHealth)
     {
-        DonHP.maxValue = maxHealth;
-        DonHP.value = maxHealth;
 
+        HPdiablo.maxValue = maxHealth;
+        HPdiablo.value = maxHealth;
     }
 
     public void SetHealth(int healthActual) 
     {
-        DonHP.value = healthActual;
+        HPdiablo.value = healthActual;
     }
 }
