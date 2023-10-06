@@ -18,10 +18,10 @@ public class LHandsScript : MonoBehaviour
 
     private GameObject spawnedHand;
 
-
-
     private Vector3 leftPos;
     private Quaternion leftRot;
+
+    int hpHands = 3;
 
 
     // Start is called before the first frame update
@@ -40,15 +40,18 @@ public class LHandsScript : MonoBehaviour
         else if (collision.gameObject.tag == "Obstacle")
         {
             Destroy(this.gameObject);
-
         }
-
+        else if (collision.gameObject.tag == "DonBalas")
+        {
+            hpHands--;
+        }
     }
    
     // Update is called once per frame
     void Update()
     {
         HandsAttk();
+        DIE();
 
        
     }
@@ -62,10 +65,12 @@ public class LHandsScript : MonoBehaviour
 
             transform.Translate(Vector3.forward * Time.deltaTime * handsSpeed);
         } 
-       
-     
     }
 
+    void DIE()
+    {
+        StartCoroutine(dieNwait());
+    }
 
     IEnumerator waitNdie()
     {
@@ -81,7 +86,19 @@ public class LHandsScript : MonoBehaviour
         yield return new WaitForSeconds(10);
         cooldown = false;
     }
-    
+
+    IEnumerator dieNwait()
+    {
+        if (hpHands <= 0)
+        {
+            transform.position = leftPos;
+            transform.rotation = leftRot;
+            cooldown = true;
+            yield return new WaitForSeconds(10);
+            cooldown = false;
+        }
+    }
+
 
 }
 
