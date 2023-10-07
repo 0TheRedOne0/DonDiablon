@@ -30,30 +30,69 @@ public class LHandsScript : MonoBehaviour
      leftRot = new Quaternion(-4.724f, 184.418f, -7.584f, 1f);
         leftPos = LeftHandPos.transform.position;
     }
-    void OnCollisionEnter(Collision collision)
+    /*void OnCollisionEnter(Collision collision)
     {
+       
         if (collision.gameObject.tag == "Player")
         {
+            Debug.Log("Llama4");
             StartCoroutine(waitNdie());
-          
+            Debug.Log("Llama5");
         }
         else if (collision.gameObject.tag == "Obstacle")
         {
-            Destroy(this.gameObject);
+
+            Debug.Log("Llama4");
+            StartCoroutine(waitNdie());
+            Debug.Log("Llama5");
         }
         else if (collision.gameObject.tag == "DonBalas")
         {
             hpHands--;
+            if (hpHands <= 0)
+            {
+                StartCoroutine(dieNwait());
+            }
+
+
+        }
+    }*/
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            
+            StartCoroutine(waitNdie());
+            
+        }
+        else if (other.gameObject.tag == "Obstacle")
+        {
+
+            StartCoroutine(waitNdie());
+            
+        }
+        else if (other.gameObject.tag == "DonBalas")
+        {
+            hpHands--;
+            if (hpHands <= 0f)
+            {
+                StartCoroutine(dieNwait());
+            }
+
+
         }
     }
-   
+
+
+
     // Update is called once per frame
     void Update()
     {
         HandsAttk();
-        DIE();
+        //DIE();
+        
 
-       
     }
 
     void HandsAttk()
@@ -69,21 +108,24 @@ public class LHandsScript : MonoBehaviour
 
     void DIE()
     {
-        StartCoroutine(dieNwait());
+        if (hpHands <= 0)
+        {
+            StartCoroutine(dieNwait());
+        }
+        else
+        {
+            StartCoroutine(waitNdie());
+        }
     }
 
     IEnumerator waitNdie()
     {
-        
-        yield return new WaitForSeconds(2);
-        //LHdie = true;
-        //numLH--;
-        //Destroy(this.gameObject);
-      
+        Debug.Log("Llama");
+        yield return new WaitForSeconds(2f);     
         transform.position = leftPos;
         transform.rotation = leftRot;
         cooldown = true;
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(3f);
         cooldown = false;
     }
 
@@ -94,8 +136,9 @@ public class LHandsScript : MonoBehaviour
             transform.position = leftPos;
             transform.rotation = leftRot;
             cooldown = true;
-            yield return new WaitForSeconds(10);
+            yield return new WaitForSeconds(3f);
             cooldown = false;
+            hpHands = 3;
         }
     }
 

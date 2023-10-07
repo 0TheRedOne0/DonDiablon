@@ -158,7 +158,7 @@ public class UserInputs : MonoBehaviour
             spawnedBullet.GetComponent<BulletsDonFix>().bulletLife = bulletLife;
             //  spawnedBullet.transform.rotation = pistola.transform.rotation;
             //spawnedBullet.transform.Rotate(Prot.eulerAngles);
-            StartCoroutine(wait());
+            //StartCoroutine(wait());
 
 
             
@@ -173,7 +173,7 @@ public class UserInputs : MonoBehaviour
     IEnumerator waitBoomerang()
     {
         
-        yield return new WaitForSeconds(0.6f);
+        yield return new WaitForSeconds(0.4f);
      ///   unarmedM = false;
         Boomerang = true;
         Debug.Log("termino el tiempo");
