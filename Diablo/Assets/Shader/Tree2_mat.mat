@@ -55,7 +55,7 @@ Material:
     - _Has_AO: 1
     - _Has_Color_Texture: 1
     - _Has_Normal_Map_Texture: 0
-    - _Hue: 0
+    - _Hue: -1.07
     - _Is_it_metallic_1: 0
     - _Normal_Strengh: 1
     - _OpenGL: 0
