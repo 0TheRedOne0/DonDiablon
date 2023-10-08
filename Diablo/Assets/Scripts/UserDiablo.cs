@@ -52,6 +52,14 @@ public class UserDiablo : MonoBehaviour
             barraDeVidaDiablo.SetHealth(DcurrentHealth);
             Debug.Log("-1 Diablo");
         }
+        else if (collision.gameObject.tag == "Machete")
+        {
+
+            DcurrentHealth = DcurrentHealth - 10;
+            SetHealth(DcurrentHealth);
+            barraDeVidaDiablo.SetHealth(DcurrentHealth);
+           
+        }
     }
 
   

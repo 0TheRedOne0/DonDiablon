@@ -13,15 +13,18 @@ public class UserInputs : MonoBehaviour
     public Animator CrashController;
     public FixedJoystick Joystick1;
     public FixedJoystick Joystick2;
+    public FixedJoystick Joystick3;
 
     public GameObject GameOver;
     public GameObject MainCamera;
     public GameObject prefabToSpawn; // Asigna el prefab 
+    public GameObject MacheteMissile; // Asigna el prefab 
 
     //Movement Variables
     public Rigidbody RB;
     public float moveSpeed;
-    float rotationSpeed = 20;
+    public float moveSpeedPC=10f;
+    float rotationSpeed = 20f;
 
     private Vector2 moveInput;
 
@@ -36,12 +39,14 @@ public class UserInputs : MonoBehaviour
     private Quaternion Prot;
     public GameObject pistola;
     private GameObject spawnedBullet;
+    private GameObject spawnedBullet2;
     public float bulletLife = 1f;
     public float speed = 1f;
     private MeshRenderer Visible;
 
     //public Machete[] macheteArray;
     public bool Boomerang = true;
+    public bool Machete = true;
     public bool unarmedM;
 
     //Pistola
@@ -70,12 +75,19 @@ public class UserInputs : MonoBehaviour
     {
         Death();
         Movement();
+        MovementPC();
         RotPistola();
+        RotPistola2();
 
-        if(Joystick2.Horizontal != 0|| Joystick2.Vertical != 0)
+        if (Joystick2.Horizontal != 0|| Joystick2.Vertical != 0)
         {
             
             AttkBullets();
+        }
+        if (Joystick3.Horizontal != 0 || Joystick3.Vertical != 0)
+        {
+
+            AttkMachete();
         }
     }
 
@@ -97,6 +109,16 @@ public class UserInputs : MonoBehaviour
         moveInput.Normalize();
         RB.velocity = new Vector3(moveInput.x * moveSpeed, RB.velocity.y, moveInput.y * moveSpeed);
 
+
+    }
+    void MovementPC()
+    {
+
+        float xDirection = Input.GetAxis("Horizontal");
+        float zDirection = Input.GetAxis("Vertical");
+
+        Vector3 moveDirection = new Vector3(xDirection, 0f, zDirection);
+        transform.position += moveDirection * moveSpeedPC;
 
     }
 
@@ -143,7 +165,24 @@ public class UserInputs : MonoBehaviour
 
     }
 
-    void AttkCaC()
+    void RotPistola2()
+    {
+
+        rotationInput.y = Joystick3.Vertical;
+        rotationInput.x = Joystick3.Horizontal;
+        Vector3 DirRot = rotationInput;
+
+        if (Mathf.Approximately(rotationInput.x, 0f) && Mathf.Approximately(rotationInput.y, 0f))
+            return;
+
+        float targetAngle = Mathf.Atan2(rotationInput.x, rotationInput.y) * Mathf.Rad2Deg;
+
+        Quaternion targetRotation = Quaternion.Euler(0, targetAngle, 0);
+
+        transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+
+    }
+        void AttkCaC()
     {
         StartCoroutine(ColActivate()); 
     }
@@ -171,6 +210,29 @@ public class UserInputs : MonoBehaviour
 
      }
 
+    void AttkMachete()
+    {
+
+        if (Machete == true)
+        {
+            Debug.Log("Funciona");
+            spawnedBullet2 = Instantiate(MacheteMissile, pistola.transform.position, Quaternion.LookRotation(pistola.transform.right * -1));
+            spawnedBullet2.GetComponent<BulletsDonFix>().speed = speed;
+            spawnedBullet2.GetComponent<BulletsDonFix>().bulletLife = bulletLife;
+            //  spawnedBullet.transform.rotation = pistola.transform.rotation;
+            //spawnedBullet.transform.Rotate(Prot.eulerAngles);
+            //StartCoroutine(wait());
+
+
+
+
+            Machete = false;
+            //    unarmedM = true;
+            StartCoroutine(wait());
+        }
+
+    }
+
     IEnumerator waitBoomerang()
     {
         
@@ -190,10 +252,11 @@ public class UserInputs : MonoBehaviour
     IEnumerator wait()
     {
         
-        yield return new WaitForSeconds(0.25f);
-        Visible = spawnedBullet.GetComponentInChildren<MeshRenderer>();
-        Visible.enabled = true;
+        yield return new WaitForSeconds(4f);
+        Machete = true;
 
     }
+
+
 }
 
