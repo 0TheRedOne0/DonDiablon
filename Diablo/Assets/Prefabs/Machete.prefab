@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5858476333541161700}
   m_Layer: 0
   m_Name: Machete
-  m_TagString: DonBalas
+  m_TagString: Machete
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
