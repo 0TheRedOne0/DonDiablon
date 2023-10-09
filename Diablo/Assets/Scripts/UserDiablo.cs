@@ -27,7 +27,12 @@ public class UserDiablo : MonoBehaviour
 
     public float RaiseSpeed = 100f;
 
-    
+    //Audio
+    [SerializeField] public AudioSource Auch;
+    [SerializeField] public AudioSource Death;
+
+
+
 
     // first frame update
     void Start()
@@ -51,6 +56,7 @@ public class UserDiablo : MonoBehaviour
             SetHealth(DcurrentHealth);
             barraDeVidaDiablo.SetHealth(DcurrentHealth);
             Debug.Log("-1 Diablo");
+            Auch.Play();
         }
         else if (collision.gameObject.tag == "Machete")
         {
@@ -58,7 +64,8 @@ public class UserDiablo : MonoBehaviour
             DcurrentHealth = DcurrentHealth - 10;
             SetHealth(DcurrentHealth);
             barraDeVidaDiablo.SetHealth(DcurrentHealth);
-           
+            Auch.Play();
+
         }
     }
 
@@ -87,6 +94,7 @@ public class UserDiablo : MonoBehaviour
 
         else if (DcurrentHealth >= 0)
         {
+            Death.Play();
             GameWin.SetActive(true);
             
         }
