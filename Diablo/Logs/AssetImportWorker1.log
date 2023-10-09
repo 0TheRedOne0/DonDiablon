@@ -15,9 +15,11 @@ D:/trabajos/RepoDiablon/DonDiablon/Diablo
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
+
 57763
 Successfully changed project path to: D:/trabajos/RepoDiablon/DonDiablon/Diablo
 D:/trabajos/RepoDiablon/DonDiablon/Diablo
+
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,11 +51,13 @@ D:/trabajos/RepoDiablon/DonDiablon/Diablo
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
+
 Player connection [7800] Host "[IP] 10.25.80.208 [Port] 0 [Flags] 2 [Guid] 1999998297 [EditorId] 1999998297 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ND7A2RD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
 Player connection [7800] Host "[IP] 10.25.80.208 [Port] 0 [Flags] 2 [Guid] 1999998297 [EditorId] 1999998297 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ND7A2RD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 Refreshing native plugins compatible for Editor in 11.77 ms, found 3 plugins.
+
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.5f1 (9674261d40ee)
 [Subsystems] Discovering subsystems at path D:/Unity/2022.3.5f1/Editor/Data/Resources/UnitySubsystems
@@ -66,6 +70,7 @@ Direct3D:
     VRAM:     4019 MB
     Driver:   30.0.14.9733
 Initialize mono
+
 Mono path[0] = 'D:/Unity/2022.3.5f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/2022.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Unity/2022.3.5f1/Editor/Data/MonoBleedingEdge/etc'
@@ -80,10 +85,12 @@ Mono: successfully reloaded assembly
 - Finished resetting the current domain, in  0.456 seconds
 Domain Reload Profiling: 1166ms
 	BeginReloadAssembly (169ms)
+
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
+
 		CreateAndSetChildDomain (2ms)
 	RebuildCommonClasses (79ms)
 	RebuildNativeTypeToScriptingClass (22ms)
@@ -100,13 +107,16 @@ Domain Reload Profiling: 1166ms
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
 		SetupLoadedEditorAssemblies (350ms)
+
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (15ms)
 			SetLoadedEditorAssemblies (14ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (4ms)
+
 			ProcessInitializeOnLoadAttributes (241ms)
 			ProcessInitializeOnLoadMethodAttributes (74ms)
+
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -114,6 +124,7 @@ Domain Reload Profiling: 1166ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
+
 Symbol file LoadedFromMemory doesn't match image D:\trabajos\RepoDiablon\DonDiablon\Diablo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\trabajos\RepoDiablon\DonDiablon\Diablo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 - Loaded All Assemblies, in  0.976 seconds
@@ -123,10 +134,12 @@ Mono: successfully reloaded assembly
 - Finished resetting the current domain, in  0.923 seconds
 Domain Reload Profiling: 1898ms
 	BeginReloadAssembly (177ms)
+
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
+
 		CreateAndSetChildDomain (27ms)
 	RebuildCommonClasses (44ms)
 	RebuildNativeTypeToScriptingClass (15ms)
@@ -143,10 +156,11 @@ Domain Reload Profiling: 1898ms
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
 		SetupLoadedEditorAssemblies (693ms)
+
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (7ms)
 			SetLoadedEditorAssemblies (5ms)
-			RefreshPlugins (0ms)
+
 			BeforeProcessingInitializeOnLoad (149ms)
 			ProcessInitializeOnLoadAttributes (443ms)
 			ProcessInitializeOnLoadMethodAttributes (86ms)
@@ -166,6 +180,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
@@ -174,6 +189,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+
 Received Import Request.
   Time since last request: 150316.193767 seconds.
   path: Assets/Music
@@ -253,6 +269,7 @@ Unloading 40 unused Assets / (318.6 KB). Loaded Objects now: 5815.
 Memory consumption went from 183.4 MB to 183.1 MB.
 Total: 6.262900 ms (FindLiveObjects: 0.650700 ms CreateObjectMapping: 0.655300 ms MarkObjects: 4.807000 ms  DeleteObjects: 0.148300 ms)
 
+
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -268,6 +285,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+
   Time since last request: 459.883555 seconds.
   path: Assets/Scripts/UserDiablo.cs
   artifactKey: Guid(92ce88a12bf344012bb146e584c81c30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -332,6 +350,7 @@ Unloading 40 unused Assets / (319.0 KB). Loaded Objects now: 5820.
 Memory consumption went from 183.4 MB to 183.1 MB.
 Total: 4.640000 ms (FindLiveObjects: 0.471700 ms CreateObjectMapping: 0.464500 ms MarkObjects: 3.588000 ms  DeleteObjects: 0.114600 ms)
 
+
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -348,6 +367,7 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
+
 Symbol file LoadedFromMemory doesn't match image D:\trabajos\RepoDiablon\DonDiablon\Diablo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\trabajos\RepoDiablon\DonDiablon\Diablo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 - Loaded All Assemblies, in  0.988 seconds
@@ -420,10 +440,12 @@ Mono: successfully reloaded assembly
 - Finished resetting the current domain, in  1.536 seconds
 Domain Reload Profiling: 2519ms
 	BeginReloadAssembly (221ms)
+
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (13ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
+
 		CreateAndSetChildDomain (62ms)
 	RebuildCommonClasses (48ms)
 	RebuildNativeTypeToScriptingClass (19ms)

@@ -15,9 +15,12 @@ D:/trabajos/RepoDiablon/DonDiablon/Diablo
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
+
 57763
 Successfully changed project path to: D:/trabajos/RepoDiablon/DonDiablon/Diablo
 D:/trabajos/RepoDiablon/DonDiablon/Diablo
+
+
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,11 +52,13 @@ D:/trabajos/RepoDiablon/DonDiablon/Diablo
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
+
 Player connection [28636] Host "[IP] 10.25.80.208 [Port] 0 [Flags] 2 [Guid] 446402924 [EditorId] 446402924 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ND7A2RD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
 Player connection [28636] Host "[IP] 10.25.80.208 [Port] 0 [Flags] 2 [Guid] 446402924 [EditorId] 446402924 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-ND7A2RD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 Refreshing native plugins compatible for Editor in 10.47 ms, found 3 plugins.
+
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.5f1 (9674261d40ee)
 [Subsystems] Discovering subsystems at path D:/Unity/2022.3.5f1/Editor/Data/Resources/UnitySubsystems
@@ -66,6 +71,7 @@ Direct3D:
     VRAM:     4019 MB
     Driver:   30.0.14.9733
 Initialize mono
+
 Mono path[0] = 'D:/Unity/2022.3.5f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/2022.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Unity/2022.3.5f1/Editor/Data/MonoBleedingEdge/etc'
@@ -80,10 +86,12 @@ Mono: successfully reloaded assembly
 - Finished resetting the current domain, in  0.455 seconds
 Domain Reload Profiling: 1157ms
 	BeginReloadAssembly (180ms)
+
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
+
 		CreateAndSetChildDomain (1ms)
 	RebuildCommonClasses (70ms)
 	RebuildNativeTypeToScriptingClass (24ms)
@@ -107,6 +115,7 @@ Domain Reload Profiling: 1157ms
 			BeforeProcessingInitializeOnLoad (5ms)
 			ProcessInitializeOnLoadAttributes (232ms)
 			ProcessInitializeOnLoadMethodAttributes (73ms)
+
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -114,6 +123,7 @@ Domain Reload Profiling: 1157ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
+
 Symbol file LoadedFromMemory doesn't match image D:\trabajos\RepoDiablon\DonDiablon\Diablo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\trabajos\RepoDiablon\DonDiablon\Diablo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 - Loaded All Assemblies, in  0.956 seconds
@@ -162,9 +172,11 @@ Unloading 71 unused Assets / (351.8 KB). Loaded Objects now: 5811.
 Memory consumption went from 212.8 MB to 212.4 MB.
 Total: 6.155400 ms (FindLiveObjects: 0.500500 ms CreateObjectMapping: 0.525500 ms MarkObjects: 4.799000 ms  DeleteObjects: 0.329300 ms)
 
+
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
@@ -269,20 +281,18 @@ Unloading 40 unused Assets / (318.7 KB). Loaded Objects now: 5816.
 Memory consumption went from 183.4 MB to 183.1 MB.
 Total: 6.413800 ms (FindLiveObjects: 0.651300 ms CreateObjectMapping: 0.670600 ms MarkObjects: 4.950700 ms  DeleteObjects: 0.139700 ms)
 
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+
   custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+
 Received Import Request.
   Time since last request: 380.220648 seconds.
   path: Assets/Music/AuchDiablo.mp3
@@ -302,10 +312,12 @@ Mono: successfully reloaded assembly
 - Finished resetting the current domain, in  1.225 seconds
 Domain Reload Profiling: 2139ms
 	BeginReloadAssembly (180ms)
+
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
+
 		CreateAndSetChildDomain (53ms)
 	RebuildCommonClasses (58ms)
 	RebuildNativeTypeToScriptingClass (16ms)
@@ -340,10 +352,12 @@ Unloading 40 unused Assets / (318.8 KB). Loaded Objects now: 5820.
 Memory consumption went from 183.4 MB to 183.1 MB.
 Total: 4.692400 ms (FindLiveObjects: 0.521300 ms CreateObjectMapping: 0.466400 ms MarkObjects: 3.574600 ms  DeleteObjects: 0.128900 ms)
 
+
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
@@ -403,11 +417,6 @@ Unloading 40 unused Assets / (318.7 KB). Loaded Objects now: 5824.
 Memory consumption went from 183.4 MB to 183.1 MB.
 Total: 5.045900 ms (FindLiveObjects: 0.544000 ms CreateObjectMapping: 0.572400 ms MarkObjects: 3.818200 ms  DeleteObjects: 0.110300 ms)
 
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
@@ -417,6 +426,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+
 Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\trabajos\RepoDiablon\DonDiablon\Diablo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
@@ -466,21 +476,16 @@ Unloading 40 unused Assets / (318.8 KB). Loaded Objects now: 5829.
 Memory consumption went from 183.4 MB to 183.1 MB.
 Total: 4.819200 ms (FindLiveObjects: 0.482800 ms CreateObjectMapping: 0.528600 ms MarkObjects: 3.689700 ms  DeleteObjects: 0.116900 ms)
 
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+
+  Time since last request: 23152.411626 seconds.
+  path: Assets/Diablon.unity
+  artifactKey: Guid(10ea860c7c7a84fca854d64c0dec6cb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Diablon.unity using Guid(10ea860c7c7a84fca854d64c0dec6cb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df0e0844719fbec942ad1e7feeed6c1b') in 0.007186 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
+
   Time since last request: 746.742228 seconds.
   path: Assets/Scripts/MenuMananger.cs
   artifactKey: Guid(d64c62322008f4a7b8dfd467209b51d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -493,10 +498,12 @@ Received Import Request.
   path: Assets/UIGraphics/Bala.PNG
   artifactKey: Guid(79a705f753d014112893468788c0ff44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/UIGraphics/Bala.PNG using Guid(79a705f753d014112893468788c0ff44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47535b166100be71ade85c5976d34796') in 0.020576 seconds
+
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
+
   Time since last request: 0.000067 seconds.
   path: Assets/UIGraphics/boton manual.png
   artifactKey: Guid(3755b6e98be5b4cf98e1b7df78ee0a11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
