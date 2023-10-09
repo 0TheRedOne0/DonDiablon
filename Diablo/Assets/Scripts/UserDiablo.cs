@@ -85,7 +85,7 @@ public class UserDiablo : MonoBehaviour
             }
         }
 
-        else if (DcurrentHealth == 0)
+        else if (DcurrentHealth >= 0)
         {
             GameWin.SetActive(true);
             
