@@ -7582,7 +7582,7 @@ PrefabInstance:
         type: 3}
       propertyPath: MacheteMissile
       value: 
-      objectReference: {fileID: 1191467300559628140, guid: be39c9a4bd09a8149ad0c02e6e70d5f3,
+      objectReference: {fileID: 4255632634855854397, guid: 827a020c2103cf44b94a54bd4f4c19b3,
         type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
