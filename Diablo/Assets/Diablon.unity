@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731707, g: 0.13414726, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731713, g: 0.13414736, b: 0.12107852, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7582,7 +7582,7 @@ PrefabInstance:
         type: 3}
       propertyPath: MacheteMissile
       value: 
-      objectReference: {fileID: 7104932037886064179, guid: df4de785849f66842a2d7658d83814a5,
+      objectReference: {fileID: 1191467300559628140, guid: be39c9a4bd09a8149ad0c02e6e70d5f3,
         type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
