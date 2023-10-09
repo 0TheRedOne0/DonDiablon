@@ -51,11 +51,11 @@ Material:
     m_Ints: []
     m_Floats:
     - _Base_Roughness: 0.744
-    - _Color_contrast: 1
+    - _Color_contrast: 1.8
     - _Has_AO: 1
     - _Has_Color_Texture: 1
     - _Has_Normal_Map_Texture: 0
-    - _Hue: 0
+    - _Hue: -1.13
     - _Is_it_metallic_1: 0
     - _Normal_Strengh: 1
     - _OpenGL: 0
@@ -68,7 +68,7 @@ Material:
     - _Roughness_White: 1
     - _Solid_Color_Overlay: 0
     m_Colors:
-    - _Solid_Color: {r: 0, g: 0, b: 0, a: 0}
+    - _Solid_Color: {r: 0.36078432, g: 0.098039225, b: 0.09411766, a: 0}
     - _Tiling_and_Offset: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &8501833321261738558
