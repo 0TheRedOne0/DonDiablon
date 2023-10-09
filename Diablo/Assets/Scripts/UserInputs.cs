@@ -41,7 +41,7 @@ public class UserInputs : MonoBehaviour
     private GameObject spawnedBullet;
     private GameObject spawnedBullet2;
     public float bulletLife = 1f;
-    public float speed = 1f;
+    public float speed = 80f;
     private MeshRenderer Visible;
 
     //public Machete[] macheteArray;
